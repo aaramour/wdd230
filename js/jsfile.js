@@ -1,4 +1,4 @@
-const todaysDate = new Date();
+const todaysDate = new Date(document.lastModified);
 let currentYear = todaysDate.getFullYear();
 document.getElementById("year").innerText = currentYear;
 let currentDay = todaysDate.getDate();
