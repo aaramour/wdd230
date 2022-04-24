@@ -30,13 +30,11 @@ header {
 
 header img {
     width: 100%;
-    /* height: ; */
 
 }
 
 footer {
     margin: 1 rem auto;
-    /* border: 1px solid black; */
     padding: .5 rem;
     background-color: burlywood;
     display: grid;
@@ -45,7 +43,6 @@ footer {
 }
 
 li {
-    /* padding: .7rem; */
     margin: .7rem;
     font-size: 1.2rem;
 }
