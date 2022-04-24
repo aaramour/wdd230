@@ -10,21 +10,47 @@ body {
 
 header, main, footer {
     max-width: 700px;
-    margin: 0 auto;
+    margin: auto;
+    padding: 1rem;
+    display: grid;
+    justify-items: center;
+    border-radius: 6px;
 }
 
 header {
     margin: 1rem auto;
-    border: 1px solid #bbb;
+    /* border: 1px solid black; */
     padding: .5rem;
-    background-color: #eee;
+    background-color:burlywood;
     display: grid;
     grid-template-columns: 200px 1fr;
     align-items: center;
+    justify-items: center;
 }
 
 header img {
     width: 100%;
     /* height: ; */
 
+}
+
+footer {
+    margin: 1 rem auto;
+    /* border: 1px solid black; */
+    padding: .5 rem;
+    background-color: burlywood;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-items: center;
+}
+
+li {
+    /* padding: .7rem; */
+    margin: .7rem;
+    font-size: 1.2rem;
+}
+
+.updateSection {
+    font-size: .8rem;
+    color:darkslategray;
 }
