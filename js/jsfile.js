@@ -10,6 +10,9 @@ if (currentHour > 12) {
     currentHour += -12;
     AMorPM = "PM";
 } else AMorPM = "AM"
+if (currentMinutes < 10) {
+    currentMinutes = `0${currentMinutes}`
+}
 todaysDateTime = `${currentMonth}/${currentDay}/${currentYear} ${currentHour}:${currentMinutes} ${AMorPM}`
 
 document.getElementById("updated").innerText = todaysDateTime;
