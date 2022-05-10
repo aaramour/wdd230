@@ -46,9 +46,7 @@ h3 {
 header {
     display: grid;
     grid-template-columns: 150px 1fr;
-    text-align: center;
-    align-items: center;
-    justify-items: left;
+    justify-items: right;
     padding:1rem;
     
 }
