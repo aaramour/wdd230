@@ -30,7 +30,15 @@ header div {
     display: flex;
     padding:.5rem;
     text-align: left;
-    width: 100%;
+    align-items: center;
+    /* width: 100%; */
+}
+
+#subHeader1 {
+    width: 100vw;
+}
+.pageName {
+    align-items: flex-start;
 }
 
 header :nth-child(2) {
@@ -74,18 +82,23 @@ h2 {
 }
 
 nav {
-    background-color: #eee;
+    
     width: auto;
     padding: 0;
+    justify-self: flex-end;
+    flex-grow: 1;
 }
 
 nav button {
-    margin: 2vw;
-    background: transparent;
+    margin:0;
+    width: 55px;
+    height: 55px;
+    background: #eee;
     border: none;
     font-size: 2rem;
     color: #555;
-    /* float: right; */
+    float: right;
+    margin-right: 1rem;
 }
 
 nav ul {
