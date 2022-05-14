@@ -1,0 +1,135 @@
+:root {
+    --color1: #EDCB57;
+    --color2: #2D557C;
+    --color3: #FCECAD;
+    --color4: #72c4be; 
+    --color5: #b9d2f1;
+    --color6: #2A2F33;
+  }
+
+header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.icon{
+    width: 48px;
+    height: auto;
+    padding: .5rem;
+    align-self: center;
+}
+
+.socialIcon {
+    width: 40px;
+    padding: .2rem
+}
+
+header div {
+    display: flex;
+    padding:.5rem;
+    text-align: left;
+    width: 100%;
+}
+
+header :nth-child(2) {
+    flex-direction: column;
+}
+
+body {
+    font-family: 'Fauna One', serif;
+    font-size: 16px;
+    background-color: var(--color5);
+    margin:0;
+}
+
+footer {
+    background-color: var(--color4);
+    padding:1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+}
+
+footer div {
+    display:inline;
+}
+
+h1 {
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+h2 {
+    margin: 0;
+    font-size: .9rem;
+}
+#currentDate {
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 90%;
+    border: 1px solid rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    padding: .7rem;
+
+}
+
+nav {
+    background-color: #eee;
+    width: auto;
+    padding: 0;
+}
+
+nav button {
+    margin: 2vw;
+    background: transparent;
+    border: none;
+    font-size: 2rem;
+    color: #555;
+    /* float: right; */
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin:0;
+    position: absolute;
+    top: 10vw;
+    right: .5rem;
+}
+
+nav ul li a {
+    text-align: center;
+    display: block;
+    padding: 2vw;
+    width: 92vw;
+    text-decoration: none;
+    color: #333;
+    border-top: 1px solid rgba(60,66,66,0.5);
+    background: purple;
+}
+
+
+
+nav ul li.active a {
+    background-color: darkblue);
+    color: #fff;
+}
+
+nav ul li a:hover {
+    background-color: magenta;
+    color: #333;
+}
+
+nav ul {
+    display: none;
+}
+nav ul.open {
+    display: block;
+    top:80px;
+}
+
+#hamburger span:nth-child(1) {display: block;}
+#hamburger span:nth-child(2) {display: none;}
+
+#hamburger.open span:nth-child(1) {display: none;}
+#hamburger.open span:nth-child(2) {display: block;}
