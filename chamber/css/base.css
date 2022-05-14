@@ -22,7 +22,8 @@ header {
 }
 
 .socialIcon {
-    width: 40px;
+    width: 30px;
+    height: 30px;
     padding: .2rem
 }
 
@@ -107,13 +108,13 @@ nav ul {
     margin:0;
     position: absolute;
     top: 10vw;
-    right: .5rem;
+    right: 0;
 }
 
 nav ul li a {
     text-align: center;
     display: block;
-    padding: 2vw;
+    padding: 4vw;
     width: 92vw;
     text-decoration: none;
     color: #333;
