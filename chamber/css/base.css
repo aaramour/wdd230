@@ -125,6 +125,7 @@ nav button {
     font-size: 2rem;
     color: #555;
     float: right;
+    text-align: center;
 }
 
 nav ul {
