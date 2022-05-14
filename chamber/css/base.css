@@ -12,6 +12,8 @@ header {
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
+    background-color: var(--color2);
+    padding-bottom: 1rem;
 }
 
 .icon{
@@ -29,10 +31,8 @@ header {
 
 header div {
     display: flex;
-    padding:.5rem;
     text-align: left;
     align-items: center;
-    /* width: 100%; */
 }
 
 #subHeader1 {
@@ -40,6 +40,7 @@ header div {
 }
 .pageName {
     align-items: flex-start;
+    flex-grow: 1;
 }
 
 header :nth-child(2) {
@@ -65,20 +66,26 @@ footer div {
 }
 
 h1 {
+    font-family: 'Cinzel', serif;
     margin: 0;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
+    color: var(--color3);
 }
 
 h2 {
+    font-family: 'Cinzel', serif;
     margin: 0;
-    font-size: .9rem;
+    font-size: .8rem;
+    color: var(--color3);
+    white-space: nowrap;
 }
 #currentDate {
-    background-color: rgba(0, 0, 0, 0.2);
+    background-color: rgba(0, 0, 0, 0.15);
     width: 90%;
     border: 1px solid rgba(0, 0, 0, 0.4);
     justify-content: center;
     padding: .7rem;
+    color: var(--color3)
 
 }
 
@@ -87,19 +94,18 @@ nav {
     width: auto;
     padding: 0;
     justify-self: flex-end;
-    flex-grow: 1;
+    margin: 2vw;
 }
 
 nav button {
-    margin:0;
+    margin:0rem;
     width: 55px;
     height: 55px;
-    background: #eee;
+    background: var(--color3);
     border: none;
     font-size: 2rem;
     color: #555;
     float: right;
-    margin-right: 1rem;
 }
 
 nav ul {
@@ -109,6 +115,7 @@ nav ul {
     position: absolute;
     top: 10vw;
     right: 0;
+    border-bottom: 1px solid rgba(60,66,66,0.5);
 }
 
 nav ul li a {
@@ -119,19 +126,20 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     border-top: 1px solid rgba(60,66,66,0.5);
-    background: purple;
+    
+    background: var(--color3);
 }
 
 
 
 nav ul li.active a {
-    background-color: darkblue;
-    color: #fff;
+    background-color: var(--color1);
+    color: var(--color6);
 }
 
 nav ul li a:hover {
-    background-color: magenta;
-    color: #333;
+    background-color: var(--color5);
+    color: var(--color6);
 }
 
 nav ul {
