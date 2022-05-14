@@ -33,14 +33,14 @@
           <h1>Yankeetown</h1>
           <h2>Chamber of Commerce</h2>
         </div>
-
-        <a href="https://www.facebook.com">
-          <img class="socialIcon" src="images/fb_small.png" alt="Facebook" />
-        </a>
-        <a href="https://www.linkedin.com">
-          <img class="socialIcon" src="images/li_small.png" alt="LinkedIn" />
-        </a>
-
+        <div id="social">
+          <a href="https://www.facebook.com">
+            <img class="socialIcon" src="images/fb_small.png" alt="Facebook" />
+          </a>
+          <a href="https://www.linkedin.com">
+            <img class="socialIcon" src="images/li_small.png" alt="LinkedIn" />
+          </a>
+        </div>
         <nav>
           <button id="hamburger"><span>&#9776;</span><span>X</span></button>
           <ul id="primaryNav">
@@ -64,26 +64,29 @@
         <div>Spotlight 2</div>
         <div>Spotlight 3</div>
       </section>
-      <section id="join"></section>
+      <section id="join">Join</section>
     </main>
 
     <footer>
-      <div>
+      <section id="yankeetownInfo">
         <img
           src="images/icon_lg.png"
           alt="Yankeetown Chamber of Commerce - Logo"
         />
-        <h3 class="address">Yankeetown Chamber of Commerce</h3>
-        <p class="address">6241 Harmony Ln.<br />Yankeetown, Fl 34498</p>
-        <p>info@yankeetowncchamber.com</p>
-        <p>(352) 447-2511</p>
-        <p>📍 Location Map</p>
-      </div>
+        <div id="addressInfo">
+          <h3 class="address">Yankeetown Chamber of Commerce</h3>
+          <p class="address">6241 Harmony Ln.<br />Yankeetown, Fl 34498</p>
+        </div>
+        <div id="contactInfo">
+          <p>info@yankeetowncchamber.com</p>
+          <p>(352) 447-2511</p>
+          <p>📍 Location Map</p>
+        </div>
+      </section>
       <div id="projectInfo">
         <p>&#169;<span id="year"></span> Yankeetown Chamber</p>
         <p class="bold">Aaron Eardley</p>
         <p>WDD 230 Project</p>
-
         <p class="updateSection">Last updated: <span id="updated"></span></p>
       </div>
     </footer>
