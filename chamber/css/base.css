@@ -20,7 +20,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     background-color: var(--color2);
-    padding-bottom: 1rem;
+    padding: .5rem 0 1rem 0;
 }
 
 .iconSmall{
@@ -48,11 +48,12 @@ header div {
 .pageName {
     align-items: flex-start;
     flex-grow: 1;
+    flex-direction: column
 }
 
-header :nth-child(2) {
-    flex-direction: column;
-}
+/* #pageName {
+    ;
+} */
 
 main section {
     width: auto;
@@ -147,19 +148,18 @@ nav ul li a {
     text-decoration: none;
     color: #333;
     border-top: 1px solid rgba(60,66,66,0.5);
-    
     background: var(--color3);
 }
 
 
 
 nav ul li.active a {
-    background-color: var(--color1);
+    background: var(--color1);
     color: var(--color6);
 }
 
 nav ul li a:hover {
-    background-color: var(--color5);
+    background: var(--color5);
     color: var(--color6);
 }
 
@@ -182,7 +182,7 @@ footer {
     color: var(--color5);
     padding:1.5rem;
     text-align: center;
-    margin-top: 2rem;
+    margin: 1rem 0 1rem 0;
 }
 
 footer h3 {
@@ -206,4 +206,12 @@ footer h3 {
 .address {
     font-style: italic;
     margin:0;
+}
+
+.medLarOnly {
+    display: none;
+}
+
+#updateSection {
+    font-size: .8rem;
 }
