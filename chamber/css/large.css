@@ -40,6 +40,7 @@
     
     #social {
         order: +1;
+        justify-content: right;
     }
 
     main {

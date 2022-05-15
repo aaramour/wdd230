@@ -20,7 +20,7 @@ header {
     flex-direction: column;
     justify-content: flex-start;
     background-color: var(--color2);
-    padding: .5rem 0 1rem 0;
+    padding: 1rem;
 }
 
 .iconSmall{
@@ -43,7 +43,7 @@ header div {
 }
 
 #subHeader1 {
-    width: 100vw;
+    width: 100%;
 }
 .pageName {
     align-items: flex-start;
@@ -102,10 +102,10 @@ h2 {
 
 #currentDate {
     background-color: rgba(0, 0, 0, 0.15);
-    width: 90vw;
+    width: 100%;
     border: 1px solid rgba(0, 0, 0, 0.4);
     justify-content: center;
-    padding: .7rem;
+    padding: 1rem 0 1rem 0;
     color: var(--color5)
 
 }
