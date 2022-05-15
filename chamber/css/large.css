@@ -1,5 +1,7 @@
 @media (min-width: 52em) {
 
+    nav {margin: 2vw;}
+    
     nav button {display: none;}
 
     nav ul {

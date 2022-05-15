@@ -115,7 +115,7 @@ nav {
     width: auto;
     padding: 0;
     justify-self: flex-end;
-    margin: 2vw;
+    margin: 0 0 2vw 2vw;
 }
 
 nav button {
@@ -126,8 +126,8 @@ nav button {
     border: none;
     font-size: 2rem;
     color: #555;
-    float: right;
-    text-align: center;
+    float: center;
+    /* text-align: center; */
 }
 
 nav ul {
