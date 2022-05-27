@@ -49,11 +49,11 @@
 
     #spotlight {
         display: flex;
+        justify-content: space-evenly;
     }
 
     #spotlight div {
-        flex: auto;
-        
+        flex: 1 1 0;
     }
 
     footer {
@@ -65,6 +65,11 @@
 
     footer div {
         padding-right: 1rem;
+    }
+
+    #hero {
+        background-image: url("../images/hero2sm.jpg");
+        background-color: #cccccc;
     }
 
     #yankeetownInfo {
