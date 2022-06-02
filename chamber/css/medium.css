@@ -67,10 +67,7 @@
         padding-right: 1rem;
     }
 
-    #hero {
-        background-image: url("../images/hero2sm.jpg");
-        background-color: #cccccc;
-    }
+    
 
     #yankeetownInfo {
         font-size: smaller;
