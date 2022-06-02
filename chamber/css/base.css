@@ -2,7 +2,7 @@
     --color1: #EDCB57;
     --color2: #2D557C;
     --color3: #FCECAD;
-    --color4: #72c4be; 
+    --color4: #77b3d4; 
     --color5: #FFFFF0;
     --color6: #2A2F33;
 }
@@ -56,9 +56,22 @@ header div {
     flex-direction: column
 }
 
-/* #pageName {
-    ;
-} */
+#banner {
+    display: none;
+    margin: 1rem 0 0 0;
+    border: 1px solid var(--color6);
+    background-color: var(--color4);
+    text-align: center;
+    width: 100%;
+    position: relative;
+}
+
+#close {
+    float:right;
+    margin: .3rem;
+    background-color: var(--color5);
+}
+
 
 main section {
     width: auto;
@@ -71,24 +84,36 @@ main section {
     position: relative;
 }
 
+
 #spotlight {
     height: auto;
 }
 
-#spotlight div {
+.spotlighted {
     width:auto;
-    height: 10rem;
+    height: auto;
     padding:.5rem;
     background-color: var(--color1);
-    border: solid 1px rgba(0, 0, 0, 0.3)
+    border: solid 1px rgba(0, 0, 0, 0.3);
+    align-items: center;
+    text-align: center;
 }
 
-#spotlight :nth-child(3) {
+#spotlight div:nth-child(3) {
     display: none;
 }
 
 #join {
     display: none;
+}
+
+div.logo {
+    border: none;
+    display: flex;
+    justify-content: center;
+    margin: 6px;
+    height: 120px;
+    width: auto;
 }
 
 h1 {
