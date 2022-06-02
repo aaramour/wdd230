@@ -84,6 +84,21 @@ main section {
     position: relative;
 }
 
+#hero {
+    padding:0;
+}
+
+#heroimage img {
+    object-fit: contain;
+    width: 100%;
+    height: auto;
+}
+
+#hero h2 {
+    position: absolute;
+    top: 1rem;
+    margin: 1rem;
+}
 
 #spotlight {
     height: auto;
