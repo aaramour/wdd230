@@ -1,4 +1,4 @@
-@media (min-width: 52em) {
+@media (min-width: 50em) {
 
     nav {margin: 2vw;}
     
@@ -14,14 +14,7 @@
 
     nav a {
         font-size: 1rem;;
-    }
-
-    h1 {
-        font-size: 2.2rem;
-    }
-    h2 {
-        font-size: 1.2rem;
-    }
+    }    
 
     nav ul li a {
         border: none;

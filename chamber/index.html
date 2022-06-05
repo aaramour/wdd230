@@ -21,12 +21,14 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/script.js"></script>
+    <script defer src="js/windchill.js"></script>
   </head>
   <body>
     <header>
       <div id="subHeader1">
         <img
           class="iconSmall"
+          src="images/icon.webp"
           src="images/icon.png"
           alt="Yankeetown CoC logo"
         />
@@ -64,14 +66,41 @@
 
     <main>
       <section id="hero">
-        <div id="heroimage">
-          <img src="images/hero2.jpg" alt="Sailboat at sunset" />
-        </div>
+        <picture class="heroimage">
+          <!-- <img src="images/hero2.jpg" alt="Sailboat at sunset" /> -->
+          <!-- W06 only: -->
+          <source
+            media="(max-width: 400px)"
+            srcset="images/w06hero400opt.jpg"
+          />
+          <source
+            media="(max-width: 600px)"
+            srcset="images/w06hero600opt.jpg"
+          />
+          <source
+            media="(max-width: 800px)"
+            srcset="images/w06hero800mlopt.jpg"
+          />
+          <img src="images/w06herolargeopt.jpg" alt="The people" />
+        </picture>
         <h2>Welcome to Yankeetown</h2>
         <div><a href="#" id="cta">Join the Chamber</a></div>
       </section>
       <section id="event"><h2>Town Hall Cookout</h2></section>
-      <section id="weather"><h2>Weather</h2></section>
+      <section id="weather">
+        <h2>Weather</h2>
+        <div>
+          <img id="weatherIcon" src="images/sunnylg.png" alt="Weather Icon" />
+
+          <span id="temp">30<span>°F</span></span>
+
+          <h3 id="weather">Partly Cloudy</h3>
+          <p>Wind Speed:</p>
+          <p><span id="windSpeed">5</span><span> mph</span></p>
+          <p>Wind Chill:</p>
+          <p><span id="windChill"></span></p>
+        </div>
+      </section>
       <section id="news">
         <h2>News Release</h2>
         <p>
@@ -110,7 +139,7 @@
     <footer>
       <section id="yankeetownInfo">
         <img
-          src="images/icon.png"
+          src="images/icon.webp"
           alt="Yankeetown Chamber of Commerce - Logo"
         />
         <div id="addressInfo">
