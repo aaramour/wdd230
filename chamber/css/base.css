@@ -131,8 +131,6 @@ picture.heroimage img {
 }
 
 #weather div {
-    /* justify-content: center; */
-    /* width:fit-content; */
     text-align: center;
     align-items: center;
     justify-items:center;
