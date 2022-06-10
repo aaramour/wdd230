@@ -41,7 +41,9 @@
         grid-column: 1/3;
     }
 
-  
+  .columnDisplay {
+      display: block;
+  }
 
     #event {
         grid-row: 5/6;

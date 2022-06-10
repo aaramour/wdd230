@@ -98,6 +98,21 @@ picture.heroimage img {
     width: 100%;
 }
 
+img[data-src] {
+    filter: blur(0.2em);
+  }
+  
+img {
+    min-width: 300px;
+    min-height: 300px;
+    filter: blur(0em);
+    transition: filter 0.5s;
+    display: block;
+    border: 1px black solid;
+    padding: 12px;
+    margin: 12px;
+  }
+  
 #hero h2 {
     position: absolute;
     top: 1rem;
