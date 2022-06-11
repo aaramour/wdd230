@@ -59,3 +59,18 @@ if('IntersectionObserver' in window) {
 else {
 
 }
+
+// FORM
+let businessTitle = document.querySelector('input[name="businessTitle"]');
+businessTitle.oninvalid = function(e) {
+    e.target.setCustomValidity("");
+        if (!e.target.validity.valid) {
+            if (e.target.value.length == 0) {
+                e.target.setCustomValidity("This field is required");
+                        } else {
+    e.target.setCustomValidity("7 or more characters, A-Z, space, or hyphen only.");
+        }}
+    };
+
+let formDate = document.querySelector('input[name="currentDate"]');
+formDate.value = todaysDate;

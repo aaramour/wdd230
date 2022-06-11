@@ -48,6 +48,23 @@
         margin: .2rem;
     }
 
+/*---------- FORM --------- */
+
+.membershipDescriptor {
+    display:block;
+    font-size: .8rem;
+    margin-top:.1rem;
+}
+
+label.sbs {
+    padding-bottom: .1rem;
+}
+
+.radioWrapper :nth-child(5) {
+    padding-bottom: 1rem;
+}
+
+
     #event {
         grid-column: 1/2;
         grid-row: 1/2;
