@@ -1,0 +1,77 @@
+{
+    "businesses": [
+        {
+            "company": "FIREWAX",
+            "picture": "http://placehold.it/32x32",
+            "email": "www.firewax.com",
+            "phone": "+1 (891) 577-2937",
+            "address": "947 Jerome Avenue, Yankeetown, FL 34498"
+        },
+        {
+            "company": "SONGBIRD",
+            "picture": "http://placehold.it/32x32",
+            "email": "www.songbird.com",
+            "phone": "+1 (850) 453-3911",
+            "address": "857 Huron Street, Yankeetown, FL 34498"
+          },
+        {
+            "company": "QUALITEX",
+            "picture": "http://placehold.it/32x32",
+            "email": "www.qualitex.com",
+            "phone": "+1 (988) 560-3757",
+            "address": "614 Duffield Street, Yankeetown, FL 34498"
+        },
+        {
+            "company": "AQUOAVO",
+            "picture": "http://placehold.it/32x32",
+            "email": "www.aquoavo.com",
+            "phone": "+1 (999) 498-2095",
+            "address": "275 Baughman Place, Yankeetown, FL 34498"
+        },
+        {
+            "company": "HAIRPORT",
+            "picture": "http://placehold.it/32x32",
+            "email": "www.hairport.com",
+            "phone": "+1 (990) 454-3087",
+            "address": "157 Denton Place, Yankeetown, FL 34498"
+        },
+        {
+            "company": "DIGIRANG",
+            "picture": "http://placehold.it/32x32",
+            "email": "www.digirang.com",
+            "phone": "+1 (880) 529-2179",
+            "address": "127 Kane Place, Yankeetown, FL 34498"
+        },
+        {
+            "company": "SCHOOLIO",
+            "picture": "http://placehold.it/32x32",
+            "email": "www.schoolio.com",
+            "phone": "+1 (994) 582-2537",
+            "address": "128 Lenox Road, Yankeetown, FL 34498"
+        },
+        {
+            "company": "PETICULAR",
+            "picture": "http://placehold.it/32x32",
+            "email": "www.peticular.com",
+            "phone": "+1 (812) 473-4000",
+            "address": "718 Bushwick Place, Yankeetown, FL 34498"
+        },
+        {
+            "company": "WATERBABY",
+            "picture": "http://placehold.it/32x32",
+            "email": "www.waterbaby.com",
+            "phone": "+1 (873) 489-2476",
+            "address": "650 Stockholm Street, Yankeetown, FL 34498"
+        },
+        {
+            "company": "ENOMEN",
+            "picture": "http://placehold.it/32x32",
+            "email": "www.enomen.com",
+            "phone": "+1 (992) 501-2590",
+            "address": "493 Whitwell Place, Yankeetown, FL 34498"
+        }
+      
+
+
+]}
+
