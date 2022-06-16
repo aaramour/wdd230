@@ -1,46 +1,48 @@
 
 table {
-    box-shadow: 12px 12px 12px black;
-    border-spacing: 1;
-    font-family: 'Ubuntu', sans-serif;
-    background: darkgray;
-  }
-  
-  
-  td, th {
-    text-align: center;
-    padding: .4rem;
-  }
-  
-  caption {
-    caption-side: top;
-    background: #7fb9c2;
-    font-size: 1.6rem;
-    font-weight: bolder;
-    padding: .6rem;
-  }
-  
-  body tr {
-    background: #e7f0ed;
-  }
-  
-  
-  
-  thead tr, .highlighted{
-    font-weight: bold;
-    color: white;
-    background: #628ca6;
-  }
-  
-  tfoot tr{
-    font-size: .75rem;
-    background: #7fb9c2;
-  }
-  
-  tr:nth-child(even) {
-    background: #e7ffed;
-  }
-   
-  #blackFriday :first-child {
-    font-style: italic;
-  }
+  box-shadow: 12px 12px 12px black;
+  border-spacing: 1;
+  font-family: 'Ubuntu', sans-serif;
+  background: darkgray;
+}
+
+
+td, th {
+  text-align: center;
+  padding: .4rem;
+}
+
+caption {
+  caption-side: top;
+  background: #7fb9c2;
+  font-size: 1.6rem;
+  font-weight: bolder;
+  padding: .6rem;
+  border: 2px solid darkgray;
+  border-bottom: none;
+}
+
+body tr {
+  background: #e7f0ed;
+}
+
+
+
+thead tr, .highlighted{
+  font-weight: bold;
+  color: white;
+  background: #628ca6;
+}
+
+tfoot tr{
+  font-size: .75rem;
+  background: #7fb9c2;
+}
+
+tr:nth-child(even) {
+  background: #e7ffed;
+}
+ 
+#blackFriday :first-child {
+  font-style: italic;
+}
