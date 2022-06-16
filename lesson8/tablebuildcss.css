@@ -1,7 +1,7 @@
 
 table {
   box-shadow: 12px 12px 12px black;
-  border-spacing: 1;
+  border-spacing: 1px;
   font-family: 'Ubuntu', sans-serif;
   background: darkgray;
 }
