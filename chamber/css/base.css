@@ -203,6 +203,55 @@ input:placeholder-shown + label, textarea:placeholder-shown + label{
 
 .membershipDescriptor {display:none;}
 
+/* -----Begin Business Cards Section----- */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  }
+  
+  section.businessCard {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    border-radius: 12px;
+  }
+  
+  .companyLogo {
+    height: 150px;
+    width: fit-content;
+    align-self: center;
+    box-shadow: 0 -3px 20px rgba(0, 0, 0, 0.8);
+    margin:  1rem 0 1.2rem;
+    border-radius: 12px;
+  }
+  
+  div.companyInfo {
+    font-size: 1.2rem;
+    padding-top: .7rem;
+  }
+  
+   a.companyInfo {  
+    text-decoration: none;
+    font-size: 1.3rem;
+    border: 1px black solid;
+    border-radius: 6px;
+    background-color: var(--color5);
+     margin-top: .5rem;
+     align-self: center;
+     width: 350px;
+  }
+  
+  a.companyInfo div {
+    padding: .4rem;
+    justify-self: center;
+  }
+  
+  a.companyInfo :hover {
+    background-color: var(--color2);
+      color: var(--color5);
+  }
+/* ------End Business Cards Section------ */
 
 #hero h2 {
     position: absolute;

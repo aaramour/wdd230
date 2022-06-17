@@ -60,21 +60,88 @@ else {
 
 }
 
-// FORM
-let businessTitle = document.querySelector('input[name="businessTitle"]');
-businessTitle.oninvalid = function(e) {
-    e.target.setCustomValidity("");
-        if (!e.target.validity.valid) {
-            if (e.target.value.length == 0) {
-                e.target.setCustomValidity("This field is required");
-                        } else {
-    e.target.setCustomValidity("7 or more characters, A-Z, space, or hyphen only.");
-        }}
-    };
+// -------------Begin Join FORM -----------------
+let activePage = document.querySelector("li.active");
+if(activePage.innerText == "Join") {
+    let businessTitle = document.querySelector('input[name="businessTitle"]');
+    businessTitle.oninvalid = function(e) {
+        e.target.setCustomValidity("");
+            if (!e.target.validity.valid) {
+                if (e.target.value.length == 0) {
+                    e.target.setCustomValidity("This field is required");
+                            } else {
+        e.target.setCustomValidity("7 or more characters, A-Z, space, or hyphen only.");
+            }}
+        };
 
-let formDate = document.querySelector('input[name="currentDate"]');
-formDate.value = todaysDate;
+    let formDate = document.querySelector('input[name="currentDate"]');
+    formDate.value = todaysDate;
+    }
+//-------------------End Form--------------------
 
+// ---------------Begin Directory Page JS-------------
+else if(activePage.innerText == "Directory") {
+const requestURL = "https://aaramour.github.io/wdd230/chamber/data.json";
+
+const cards = document.querySelector('.cards');
+
+fetch(requestURL)
+.then(function (response) {
+  return response.json();
+})
+.then(function (jsonObject) {
+  console.table(jsonObject);
+  
+  const businesses = jsonObject.businesses;
+  businesses.forEach(displayBusinesses);  
+});
+
+function numOrderer(num) {
+  let numOrdered = "";
+  if (num % 10 == 1) {
+    numOrdered = `${num}st`;
+  }else if (num % 10 == 2) {
+    numOrdered = `${num}nd`;
+  }else if (num % 10 == 3) {
+    numOrdered = `${num}rd`;
+  } else {
+    numOrdered = `${num}th`;
+  } return numOrdered;
+}
+function displayBusinesses(businesses) {
+  let card = document.createElement('section');
+  let h2 = document.createElement('h2');
+  let coLogo = document.createElement('img');
+  let altText = `Logo of ${businesses.company}`;
+  let coAddressDiv = document.createElement('div');
+  let coPhoneDiv = document.createElement('div');
+  let coSiteDiv = document.createElement('a');
+  
+  h2.textContent = `${businesses.company}`;
+  card.setAttribute('class', 'businessCard')
+  coLogo.setAttribute('class', 'companyLogo');
+  coLogo.setAttribute('src', businesses.picture);
+  coLogo.setAttribute('alt', altText);
+  coLogo.setAttribute('loading', 'lazy');
+  coAddressDiv.setAttribute('class', 'companyInfo');
+  coAddressDiv.textContent = `${businesses.address}`;
+  coPhoneDiv.setAttribute('class', 'companyInfo');
+  coPhoneDiv.textContent = `${businesses.phone}`;
+  coSiteDiv.setAttribute('class', 'companyInfo');
+  coSiteDiv.setAttribute('href',`https://${businesses.site}`)
+  coSiteDiv.innerHTML = `<div class="businessInfo"> ${businesses.site}</div>`;
+  
+  
+  card.appendChild(coLogo);
+  card.appendChild(h2);
+  card.appendChild(coPhoneDiv);
+  card.appendChild(coAddressDiv);
+  card.appendChild(coSiteDiv);
+  document.querySelector('div.cards').appendChild(card);
+  
+}}
+
+// --------------End Directory Page JS -------------------
 
 // function normalize(phone) {
 //     //normalize string and remove all unnecessary characters
