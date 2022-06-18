@@ -108,6 +108,7 @@ function numOrderer(num) {
     numOrdered = `${num}th`;
   } return numOrdered;
 }
+
 function displayBusinesses(businesses) {
   let card = document.createElement('section');
   let h2 = document.createElement('h2');
@@ -138,37 +139,71 @@ function displayBusinesses(businesses) {
   card.appendChild(coAddressDiv);
   card.appendChild(coSiteDiv);
   document.querySelector('div.cards').appendChild(card);
+} 
+
+  function displayButton() {
+    let buttHolder = document.querySelector(".buttHolder");
+    let button = document.createElement("button");
+    button.setAttribute("type", "button");
+    button.setAttribute("id", "viewSwitcher");
+    button.innerText = "Switch to List View";
+    button.style.padding = "1rem";
+    button.style.margin = "1rem";
+    button.style.fontSize = "1.3rem"
+    button.style.color = "var(--color5)";
+    button.style.fontFamily = "'Fauna One', serif";
+    buttHolder.appendChild(button);
+  }
   
-}}
+  displayButton();
+  
+  const button = document.querySelector("#viewSwitcher");
+  button.addEventListener("click", buttonSwitcher);
+  
+  function buttonSwitcher(button) {
+  
+    let theButton = document.querySelector(".buttHolder :first-child");
+  
+    if (theButton.hasAttribute("class")) {
+        let cards = document.querySelectorAll(".cardslist");
+    let businessCards = document.querySelectorAll(".businessCardList");
+    let logos = document.querySelectorAll(".companyLogo");
+      theButton.removeAttribute("class");
+      theButton.innerText = "Switch to List View";
+      businessCards.forEach((item) => {
+        item.removeAttribute("class");
+        item.setAttribute("class", "businessCard");
+      });
+      cards.forEach((item) => {
+        item.removeAttribute("class");
+        item.setAttribute("class", "cards");
+      });
+  
+      logos.forEach((item) => {
+        item.style.display = "block";
+      });
+      
+    } else {
+    let cards = document.querySelectorAll(".cards");
+    let businessCards = document.querySelectorAll(".businessCard");
+    let logos = document.querySelectorAll(".companyLogo");
+      theButton.setAttribute("class", "switchedView");
+      theButton.innerText = "Switch to Card View";
+      businessCards.forEach((item) => {
+        item.removeAttribute("class");
+        item.setAttribute("class", "businessCardList");
+      });
+      cards.forEach((item) => {
+        item.removeAttribute("class");
+        item.setAttribute("class", "cardslist");
+      });
+  
+      logos.forEach((item) => {
+        item.style.display = "none";
+      });
+    }
+  }
+}
 
 // --------------End Directory Page JS -------------------
 
-// function normalize(phone) {
-//     //normalize string and remove all unnecessary characters
-//     phone = phone.replace(/[^\d]/g, "");
-
-//     //check if number length equals to 10
-//     if (phone.length == 10) {
-//         //reformat and return phone number
-//         return phone.replace(/(\d{3})(\d{3})(\d{4})/, "($1) $2-$3");
-//     }
-
-//     return null;
-// }
-
-// var phone = '(123)4567890';
-// phone = normalize(phone); //(123) 456-7890
-
-// OR 
-
-// function formatPhoneNumber(phoneNumberString) {
-//     var cleaned = ('' + phoneNumberString).replace(/\D/g, '');
-//     var match = cleaned.match(/^(1|)?(\d{3})(\d{3})(\d{4})$/);
-//     if (match) {
-//       var intlCode = (match[1] ? '+1 ' : '');
-//       return [intlCode, '(', match[2], ') ', match[3], '-', match[4]].join('');
-//     }
-//     return null;
-//   }
-//   formatPhoneNumber('+12345678900') // => "+1 (234) 567-8900"
-//   formatPhoneNumber('2345678900')   // => "(234) 567-8900"

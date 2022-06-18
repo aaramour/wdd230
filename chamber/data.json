@@ -5,6 +5,7 @@
             "picture": "https://aaramour.github.io/wdd230/chamber/images/firewax.png",
             "site": "www.firewax.com",
             "phone": "+1 (891) 577-2937",
+            "membership": "g",
             "address": "947 Jerome Avenue, Yankeetown, FL 34498"
         },
         {
@@ -12,6 +13,7 @@
             "picture": "https://aaramour.github.io/wdd230/chamber/images/songbird.png",
             "site": "www.songbird.com",
             "phone": "+1 (850) 453-3911",
+            "membership": "s",
             "address": "857 Huron Street, Yankeetown, FL 34498"
           },
         {
@@ -19,6 +21,7 @@
             "picture": "https://aaramour.github.io/wdd230/chamber/images/qualitex.png",
             "site": "www.qualitex.com",
             "phone": "+1 (988) 560-3757",
+            "membership": "b",
             "address": "614 Duffield Street, Yankeetown, FL 34498"
         },
         {
@@ -26,6 +29,7 @@
             "picture": "https://aaramour.github.io/wdd230/chamber/images/aquoavo.png",
             "site": "www.aquoavo.com",
             "phone": "+1 (999) 498-2095",
+            "membership": "n",
             "address": "275 Baughman Place, Yankeetown, FL 34498"
         },
         {
@@ -33,6 +37,7 @@
             "picture": "https://aaramour.github.io/wdd230/chamber/images/hairport.png",
             "site": "www.hairport.com",
             "phone": "+1 (990) 454-3087",
+            "membership": "s",
             "address": "157 Denton Place, Yankeetown, FL 34498"
         },
         {
@@ -40,6 +45,7 @@
             "picture": "https://aaramour.github.io/wdd230/chamber/images/digirang.png",
             "site": "www.digirang.com",
             "phone": "+1 (880) 529-2179",
+            "membership": "b",
             "address": "127 Kane Place, Yankeetown, FL 34498"
         },
         {
@@ -47,6 +53,7 @@
             "picture": "https://aaramour.github.io/wdd230/chamber/images/schoolio.png",
             "site": "www.schoolio.com",
             "phone": "+1 (994) 582-2537",
+            "membership": "n",
             "address": "128 Lenox Road, Yankeetown, FL 34498"
         },
         {
@@ -54,6 +61,7 @@
             "picture": "https://aaramour.github.io/wdd230/chamber/images/peticular.png",
             "site": "www.peticular.com",
             "phone": "+1 (812) 473-4000",
+            "membership": "g",
             "address": "718 Bushwick Place, Yankeetown, FL 34498"
         },
         {
@@ -61,6 +69,7 @@
             "picture": "https://aaramour.github.io/wdd230/chamber/images/waterbaby.png",
             "site": "www.waterbaby.com",
             "phone": "+1 (873) 489-2476",
+            "membership": "g",
             "address": "650 Stockholm Street, Yankeetown, FL 34498"
         },
         {
@@ -68,6 +77,7 @@
             "picture": "https://aaramour.github.io/wdd230/chamber/images/enomen.png",
             "site": "www.enomen.com",
             "phone": "+1 (992) 501-2590",
+            "membership": "s",
             "address": "493 Whitwell Place, Yankeetown, FL 34498"
         }
       
