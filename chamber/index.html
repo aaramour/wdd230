@@ -46,8 +46,9 @@
         <nav>
           <button id="hamburger"><span>&#9776;</span><span>X</span></button>
           <ul id="primaryNav">
+            <li class="active"><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
-            <li class="active"><a href="directory.html">Directory</a></li>
+            <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
             <li><a href="contact.html">Contact</a></li>
           </ul>
@@ -89,13 +90,13 @@
       <section id="weather">
         <h2>Weather</h2>
         <div>
-          <img id="weatherIcon" src="images/sunnylg.png" alt="Weather Icon" />
+          <img id="weatherIcon" src="" alt="" />
 
-          <span id="temp">30<span>°F</span></span>
+          <span id="currentTemp"></span>
 
-          <h3>Partly Cloudy</h3>
+          <h3 id="weatherDesc"></h3>
           <p>Wind Speed:</p>
-          <p><span id="windSpeed">5</span><span> mph</span></p>
+          <p><span id="windSpeed"></span></p>
           <p>Wind Chill:</p>
           <p><span id="windChill"></span></p>
         </div>
