@@ -40,12 +40,6 @@ function displayResults(weatherData) {
   document.querySelector("#windChill").textContent = windChill;
 }
 
-
-// let temp = parseFloat(document.querySelector("#temp").textContent);
-// let windSpeedValue = parseFloat(document.querySelector("#windSpeed").textContent);
-// let windChill = "";
-// let windChillText = "";
-
 function windChiller(temp, speed) {
   if (temp <= 50 && speed > 3) {
       windChill = 35.74 + (.6215 * temp) - (35.75 * Math.pow(speed, 0.16)) + (.4275 * temp) * Math.pow(speed, 0.16);
