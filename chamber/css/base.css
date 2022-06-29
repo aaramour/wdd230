@@ -513,5 +513,7 @@ footer h3 {
     right: 2rem;
 }
 
-
-
+#currentTemp {
+    font-size: 2rem;
+    font-weight: bold;
+}
