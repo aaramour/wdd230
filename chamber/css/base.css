@@ -517,3 +517,12 @@ footer h3 {
     font-size: 2rem;
     font-weight: bold;
 }
+
+#footerIcon {
+    padding: 1rem;
+}
+
+main.twoSections {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}

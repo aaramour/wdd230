@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contact Us - Yankeetown CoC</title>
+    <title>Directory - Yankeetown</title>
     <meta
       name="description"
-      content="Contact the Chamber of Commerce for Yankeetown, Florida - partnering small businesses and a small town for big results"
+      content="Directory page for Yankeetown, Florida Chamber of Commerce - partnering small businesses and a small town for big results"
     />
     <link rel="shortcut icon" href="images/favicona.ico" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -21,7 +21,6 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/script.js"></script>
-    <script defer src="js/windchill.js"></script>
   </head>
   <body>
     <header>
@@ -46,11 +45,11 @@
         <nav>
           <button id="hamburger"><span>&#9776;</span><span>X</span></button>
           <ul id="primaryNav">
-            <li class="active"><a href="index.html">Home</a></li>
+            <li><a href="index.html">Home</a></li>
             <li><a href="discover.html">Discover</a></li>
             <li><a href="directory.html">Directory</a></li>
             <li><a href="join.html">Join</a></li>
-            <li><a href="contact.html">Contact</a></li>
+            <li class="active"><a href="contact.html">Contact</a></li>
           </ul>
         </nav>
       </div>
@@ -64,81 +63,16 @@
       </div>
     </header>
 
-    <main class="home">
-      <section id="hero">
-        <picture class="heroimage">
-          <!-- <img src="images/hero2.jpg" alt="Sailboat at sunset" /> -->
-          <!-- W06 only: -->
-          <source
-            media="(max-width: 400px)"
-            srcset="images/w06hero400opt.jpg"
-          />
-          <source
-            media="(max-width: 600px)"
-            srcset="images/w06hero600opt.jpg"
-          />
-          <source
-            media="(max-width: 800px)"
-            srcset="images/w06hero800mlopt.jpg"
-          />
-          <img src="images/w06herolargeopt.jpg" alt="The people" />
-        </picture>
-        <h2>Welcome to Yankeetown</h2>
-        <div><a href="#" id="cta">Join the Chamber</a></div>
-      </section>
-      <section id="event"><h2>Town Hall Cookout</h2></section>
-      <section id="weather">
-        <h2>Weather</h2>
-        <div>
-          <img id="weatherIcon" src="" alt="" />
-
-          <span id="currentTemp"></span>
-
-          <h3 id="weatherDesc"></h3>
-          <p>Wind Speed:</p>
-          <p><span id="windSpeed"></span></p>
-          <p>Wind Chill:</p>
-          <p><span id="windChill"></span></p>
-        </div>
-      </section>
-      <section id="news">
-        <h2>News Release</h2>
-        <p>
-          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Autem
-          exercitationem impedit nobis repellat, fuga quia aut sint! Animi
-          commodi eius dolorem incidunt, impedit similique ad nihil molestiae
-          quam, doloremque quo.
-        </p>
-      </section>
-      <section id="spotlight">
-        <div class="spotlighted">
-          <h2>Octan</h2>
-          <div class="logo">
-            <img src="images/octan_md.png" alt="Octan Fuel Company" />
-          </div>
-          <h3>The building blocks of fuel</h3>
-        </div>
-        <div class="spotlighted">
-          <h2>Kiki's Delivery Service</h2>
-          <div class="logo">
-            <img src="images/kiki_md.png" alt="Kiki's Delivery Service" />
-          </div>
-          <h3>Magically fast delivery services</h3>
-        </div>
-        <div class="spotlighted">
-          <h2>Umbrella Corporation</h2>
-          <div class="logo">
-            <img src="images/umb_md.png" alt="Umbrella Corporation" />
-          </div>
-          <h3>We want to protect you ...forever</h3>
-        </div>
-      </section>
-      <section id="join"><h2>Join Us!</h2></section>
+    <main class="twoSections">
+      <section id="contactForm"></section>
+      <section id="contactUs"></section>
+      <section id="map"></section>
     </main>
 
     <footer>
       <section id="yankeetownInfo">
         <img
+          id="footerIcon"
           src="images/icon.webp"
           alt="Yankeetown Chamber of Commerce - Logo"
         />
