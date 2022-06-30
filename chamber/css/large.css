@@ -48,12 +48,17 @@
         margin: .2rem;
     }
 
+    .largeOnly {
+        display: block;
+    }
+
 /*---------- FORM --------- */
 
 .membershipDescriptor {
     display:block;
     font-size: .8rem;
     margin-top:.1rem;
+    padding-bottom: 0.6rem;
 }
 
 label.sbs {

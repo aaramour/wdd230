@@ -35,10 +35,10 @@
           <h2>Chamber of Commerce</h2>
         </div>
         <div id="social">
-          <a href="https://www.facebook.com">
+          <a class="imageLink" href="https://www.facebook.com">
             <img class="socialIcon" src="images/fb_small.png" alt="Facebook" />
           </a>
-          <a href="https://www.linkedin.com">
+          <a class="imageLink" href="https://www.linkedin.com">
             <img class="socialIcon" src="images/li_small.png" alt="LinkedIn" />
           </a>
         </div>
@@ -64,9 +64,62 @@
     </header>
 
     <main class="twoSections">
-      <section id="contactForm"></section>
-      <section id="contactUs"></section>
-      <section id="map"></section>
+      <section id="contactUs">
+        <h2>Contact Us</h2>
+        <h3>Address</h3>
+        <p>
+          Yankeetown Chamber of Commerce<br />
+          6241 Harmony Ln.<br />
+          Yankeetown, Fl 34498
+        </p>
+        <h3>Phone</h3>
+        <p>(352) 447-2511</p>
+        <h3>Email</h3>
+        <p>info@yankeetownchamber.com</p>
+        <a class="imageLink" href="https://www.facebook.com">
+          <img class="socialIcon" src="images/fb_small.png" alt="Facebook" />
+        </a>
+        <a class="imageLink" href="https://www.linkedin.com">
+          <img class="socialIcon" src="images/li_small.png" alt="LinkedIn" />
+        </a>
+      </section>
+      <section id="contactForm">
+        <h2>Contact Form</h2>
+        <form method="get" action="thankyou.html">
+          <div class="inputWrapper">
+            <input
+              type="text"
+              name="fname"
+              placeholder="Name *"
+              required
+            />
+            <label class="top">Name*</label>
+          </div>
+          <div class="inputWrapper">
+            <input
+              type="text"
+              name="lname"
+              placeholder="Email *"
+              required
+            /><label class="top">Email*</label>
+          </div>
+          <div class="inputWrapper">
+            <textarea
+              class="longtext"
+              name="fname"
+              cols="6"
+              rows="20"
+              placeholder="Question/Concern *"
+            ></textarea
+            ><label class="top">Question/Concern*</label>
+            
+          </div>
+          <input type="submit" value="Submit Form" class="submitBtn" />
+      </section>
+      <section id="map">
+        <h2>Map</h2>
+        <div class="mapDiv"><iframe class="map" src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d11317.953899478627!2d-82.72240985766179!3d29.030521658247647!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sus!4v1656555161484!5m2!1sen!2sus" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></div>
+      </section>
     </main>
 
     <footer>

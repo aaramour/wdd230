@@ -38,9 +38,20 @@ header h2{
 .socialIcon {
     width: 30px;
     height: 30px;
-    padding: .2rem
+    /* padding: .2rem; */
+    margin: .2rem;
+    transition: all .3s;
+    border: 1px var(--color6) solid;
+    border-radius: 100%;
 }
 
+.socialIcon:hover {
+    transform: scale(1.15)
+}
+
+.imageLink {
+    text-decoration: none;
+}
 header div {
     display: flex;
     text-align: left;
@@ -155,7 +166,13 @@ input.submitBtn {
     margin: 2rem;
     width: 96%;
     max-width: 300px;
+    transition: all 0.4s;
   }
+
+  input.submitBtn:hover {
+    /* background: var(--color6) */
+    transform:scale(1.06)
+}
 
 .radioWrapper, .inputWrapper {
     background-color: var(--color5);
@@ -524,5 +541,32 @@ footer h3 {
 
 main.twoSections {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+}
+
+input[type="radio"]{
+    margin:.6rem;
+    -webkit-transform:scale(2, 2);
+       -moz-transform:scale(2, 2);
+        -ms-transform:scale(2, 2);
+         -o-transform:scale(2, 2);
+            transform:scale(2, 2)!important;
+  }
+
+  .largeOnly {
+    display: none;
+}
+
+.subSection {
+    border: solid var(--color1) 1px;
+    border-radius: 4px;
+    background-color: var(--color5);
+    margin: 1.2rem 0 0 0;
+    padding: 0 1rem 0 1rem;
+}
+
+.mapDiv {
+    display: flex;
+    justify-content: center;
+    padding-top: 1rem;
 }
