@@ -116,10 +116,11 @@ img[data-src] {
 img.discover{
     min-width: 300px;
     min-height: 300px;
+    /* max-width: 400px; */
     filter: blur(0em);
     transition: filter 0.5s;
     display: block;
-    border: 1px black solid;
+    /* border: 1px black solid; */
     padding: 12px;
     margin: 12px;
   }

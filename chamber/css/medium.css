@@ -103,4 +103,13 @@
         width:90vw;
         padding-top: .2rem;
     }
+
+    img.discover {
+        transition: all .3s;
+    }
+    img.discover:hover {
+        transform: scale(.96);
+        box-shadow: 0 0 12px black;
+        border: black 1px solid;
+    }
 }
