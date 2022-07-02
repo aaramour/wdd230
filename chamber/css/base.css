@@ -93,6 +93,7 @@ main section {
     border: 1px solid rgba(0, 0, 0, 0.3);
     color: var(--color6);
     position: relative;
+    object-fit: contain;
 }
 
 #hero {
@@ -114,15 +115,10 @@ img[data-src] {
   }
   
 img.discover{
-    min-width: 300px;
-    min-height: 300px;
-    /* max-width: 400px; */
     filter: blur(0em);
     transition: filter 0.5s;
     display: block;
-    /* border: 1px black solid; */
-    padding: 12px;
-    margin: 12px;
+    width:100%;
   }
 
 /*---------- FORM --------- */

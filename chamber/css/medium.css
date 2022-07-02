@@ -106,10 +106,20 @@
 
     img.discover {
         transition: all .3s;
+
     }
     img.discover:hover {
         transform: scale(.96);
         box-shadow: 0 0 12px black;
         border: black 1px solid;
+    }
+
+    .discoverSection {
+        display: grid;
+        grid-template-columns: 1.5fr 1fr;
+    } 
+    .discoverSection p {
+        padding-left: 1rem;
+        align-self: center;
     }
 }
