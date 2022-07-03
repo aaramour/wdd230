@@ -29,9 +29,9 @@ fetch(requestURL)
   const sl2Logo = sl2.querySelector("img");
   const sl3Logo = sl3.querySelector("img");
 
-  const sl1Site = sl1.querySelector("button");
-  const sl2Site = sl2.querySelector("button");
-  const sl3Site = sl3.querySelector("button");
+  const sl1Site = sl1.querySelector("a > div");
+  const sl2Site = sl2.querySelector("a > div");
+  const sl3Site = sl3.querySelector("a > div");
 
   const sl1SiteLink = sl1.querySelector("a");
   const sl2SiteLink = sl2.querySelector("a");

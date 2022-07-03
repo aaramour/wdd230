@@ -173,7 +173,7 @@ input.submitBtn, .joinBtn {
         text-align: center;
         margin:auto;
         width: 70%;
-
+        font-size: 1.1rem;
     }
  a:link {
         text-decoration: none;
