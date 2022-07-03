@@ -170,7 +170,13 @@ input.submitBtn, .joinBtn {
     transform:scale(1.06)
 }
     .joinBtn {
-        justify-self:baseline;
+        text-align: center;
+        margin:auto;
+        width: 70%;
+
+    }
+ a:link {
+        text-decoration: none;
     }
 
 .radioWrapper, .inputWrapper {
