@@ -12,6 +12,7 @@ const dateSnapshot = new Date(document.lastModified);
 const todaysDate = new Date();
 let currentYear = todaysDate.getFullYear();
 
+
 document.getElementById("year").innerText = currentYear;
 document.getElementById('updated').innerText = dateSnapshot.toLocaleString();
 document.getElementById('currentDate').innerText = todaysDate.toLocaleDateString('en-us', {weekday:"long", day:"numeric", month:"long", year:"numeric"}   );
@@ -63,6 +64,11 @@ else {
 
 // -------------Begin Join FORM -----------------
 let activePage = document.querySelector("li.active");
+
+if(activePage.innerText == "Home") {
+
+}
+
 if(activePage.innerText == "Join") {
     let businessTitle = document.querySelector('input[name="businessTitle"]');
     businessTitle.oninvalid = function(e) {
@@ -82,9 +88,8 @@ if(activePage.innerText == "Join") {
 
 // ---------------Begin Directory Page JS-------------
 else if(activePage.innerText == "Directory") {
-const requestURL = "https://aaramour.github.io/wdd230/chamber/data.json";
 
-const cards = document.querySelector('.cards');
+const requestURL = "https://aaramour.github.io/wdd230/chamber/data.json";
 
 fetch(requestURL)
 .then(function (response) {
@@ -96,6 +101,8 @@ fetch(requestURL)
   const businesses = jsonObject.businesses;
   businesses.forEach(displayBusinesses);  
 });
+
+const cards = document.querySelector('.cards');
 
 function numOrderer(num) {
   let numOrdered = "";
