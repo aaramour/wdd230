@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/script.js"></script>
     <script defer src="js/windchill.js"></script>
+    <script src="js/spotlight.js"></script>
   </head>
   <body>
     <header>
@@ -67,26 +68,27 @@
     <main class="home">
       <section id="hero">
         <picture class="heroimage">
-          <!-- <img src="images/hero2.jpg" alt="Sailboat at sunset" /> -->
-          <!-- W06 only: -->
           <source
             media="(max-width: 400px)"
-            srcset="images/w06hero400opt.jpg"
+            srcset="images/her_sm_300x200.jpg"
           />
           <source
             media="(max-width: 600px)"
-            srcset="images/w06hero600opt.jpg"
+            srcset="images/her_md_600x400.jpg"
           />
-          <source
-            media="(max-width: 800px)"
-            srcset="images/w06hero800mlopt.jpg"
-          />
-          <img src="images/w06herolargeopt.jpg" alt="The people" />
+
+          <img src="images/her_lg_900x822.jpg" alt="The Beach" />
         </picture>
         <h2>Welcome to Yankeetown</h2>
-        <div><a href="#" id="cta">Join the Chamber</a></div>
+        <div><a href="join.html" id="cta">Join the Chamber</a></div>
       </section>
-      <section id="event"><h2>Town Hall Cookout</h2></section>
+      <section id="event">
+        <h2>Town Hall Cookout</h2>
+        <p>Come Join Us!</p>
+        <p>July 28, Town Hall Building</p>
+        <p>Have Questions?</p>
+        <a href="contact.html"><button class="joinBtn">Contact Us!</button></a>
+      </section>
       <section id="weather">
         <h2>Weather</h2>
         <div>
@@ -111,29 +113,39 @@
         </p>
       </section>
       <section id="spotlight">
-        <div class="spotlighted">
-          <h2>Octan</h2>
+        <div id="spotLight1" class="spotlighted">
+          <h2></h2>
           <div class="logo">
-            <img src="images/octan_md.png" alt="Octan Fuel Company" />
+            <img src="" alt="" />
           </div>
-          <h3>The building blocks of fuel</h3>
+          <h3></h3>
+          <a><button class="joinBtn"></button></a>
         </div>
-        <div class="spotlighted">
-          <h2>Kiki's Delivery Service</h2>
+        <div id="spotLight2" class="spotlighted">
+          <h2></h2>
           <div class="logo">
-            <img src="images/kiki_md.png" alt="Kiki's Delivery Service" />
+            <img src="" alt="" />
           </div>
-          <h3>Magically fast delivery services</h3>
+          <h3></h3>
+          <a><button class="joinBtn"></button></a>
         </div>
-        <div class="spotlighted">
-          <h2>Umbrella Corporation</h2>
+        <div id="spotLight3" class="spotlighted">
+          <h2></h2>
           <div class="logo">
-            <img src="images/umb_md.png" alt="Umbrella Corporation" />
+            <img src="" alt="" />
           </div>
-          <h3>We want to protect you ...forever</h3>
+          <h3></h3>
+          <a><button class="joinBtn"></button></a>
         </div>
       </section>
-      <section id="join"><h2>Join Us!</h2></section>
+      <section id="join">
+        <h2>Join Us!</h2>
+        <p>
+          Learn how to join the Yankeetown Chamber of Commerce and how we can
+          benefit your business!
+        </p>
+        <a href="join.html"><button class="joinBtn">Join now!</button></a>
+      </section>
     </main>
 
     <footer>

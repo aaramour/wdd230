@@ -99,16 +99,20 @@
         display: inline;
     }
 
+    .medLarOnly {
+        display: block;
+    }
+
     #updateSection {
         width:90vw;
         padding-top: .2rem;
     }
 
-    img.discover {
+    img.discover, .logo img {
         transition: all .3s;
 
     }
-    img.discover:hover {
+    img.discover:hover, .logo img:hover {
         transform: scale(.96);
         box-shadow: 0 0 12px black;
         border: black 1px solid;
@@ -117,6 +121,7 @@
     .discoverSection {
         display: grid;
         grid-template-columns: 1.5fr 1fr;
+        align-items: center;
     } 
     .discoverSection p {
         padding-left: 1rem;

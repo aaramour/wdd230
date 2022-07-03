@@ -83,6 +83,9 @@ label.sbs {
     #join {
         grid-row: 3/4;
         grid-column: 1/2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     #hero {
@@ -91,10 +94,9 @@ label.sbs {
         grid-column: 2/3;
     }
 
-    #heroimage img {
+    #hero img {
         object-fit: cover;
         height: 100%;
-        width: 100%;
     }
 
     #news {
@@ -111,4 +113,6 @@ label.sbs {
         grid-row: 1/4;
         grid-column: 3/4;
     }
+
+    
 }

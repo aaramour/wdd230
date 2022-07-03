@@ -98,12 +98,7 @@ main section {
 
 #hero {
     padding:0;
-}
-
-picture.heroimage {
-    display: block;
-    width: 100%;
-
+    position: relative;
 }
 
 picture.heroimage img {
@@ -154,22 +149,27 @@ label.sbs {
     font-size: 1rem;
   }
 
-input.submitBtn {
+input.submitBtn, .joinBtn {
     border: none;
     background-color: var(--color2);
     color: var(--color5);
     border-radius: 1rem;
     padding: .75rem 1.5rem;
-    margin: 2rem;
     width: 96%;
     max-width: 300px;
     transition: all 0.4s;
   }
 
-  input.submitBtn:hover {
-    /* background: var(--color6) */
+  input.submitBtn {
+    margin: 2rem;
+  }
+
+  input.submitBtn:hover, .joinBtn:hover {
     transform:scale(1.06)
 }
+    .joinBtn {
+        justify-self:baseline;
+    }
 
 .radioWrapper, .inputWrapper {
     background-color: var(--color5);
@@ -391,7 +391,6 @@ h2 {
     font-size: 1.2rem;
     color: var(--color2);
     border-bottom: solid 2px var(--color2);
-    white-space: nowrap;
 }
 
 
