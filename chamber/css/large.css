@@ -25,7 +25,7 @@
     }
     nav ul li.active a {
         background: none;
-        color: var(--color5)
+        background-color: var(--color5)
     }
 
     nav ul li a:hover {
