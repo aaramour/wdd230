@@ -105,6 +105,8 @@ picture.heroimage img {
     width: 100%;
 }
 
+
+
 img[data-src] {
     filter: blur(0.2em);
   }
@@ -324,6 +326,13 @@ input:placeholder-shown + label, textarea:placeholder-shown + label{
 
 #spotlight div:nth-child(3) {
     display: none;
+}
+
+.spaced {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
 }
 
 #join {
