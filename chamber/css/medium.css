@@ -95,7 +95,7 @@
         margin: .1rem;
     }
 
-    #projectInfo p, .medLarOnly {
+    #projectInfo p, span.medLarOnly {
         display: inline;
     }
 
