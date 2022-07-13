@@ -32,7 +32,7 @@ header, main, footer {
 nav {
     position: absolute;
     background: yellow;
-    top: 84px;
+    top: 76px;
     max-width: 400px;
     width: 100vw;
 }
@@ -59,7 +59,7 @@ nav li:hover {
 }
 
 .logo {
-width: 64px;
+height: 55px;
 margin: .5rem;
 }
 
@@ -68,6 +68,7 @@ margin: .5rem;
   padding: .4rem;
   margin: .5rem;
   border: solid black 1px;
+  border-radius: 6px;
   background: lightgray;
   height: 40px;
 }
@@ -91,4 +92,9 @@ margin: .5rem;
   z-index: 2;
   max-width: 400px;
     width: 100vw;
+}
+
+footer p {
+    font-size: .9rem;
+    margin: 0 1rem 0 0;
 }
