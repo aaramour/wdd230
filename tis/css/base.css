@@ -3,13 +3,19 @@
     /* font-family: 'Montserrat', sans-serif; */
 }
 
-header {
-    margin: 0 auto;
-    max-width: 353px;
-    align-self: center;
-    background: lightcoral;
-    display: flex;
-    align-items: center;
+body {
+    margin: 0;
+}
+  
+header, main, footer {
+      margin: 0 auto;
+      max-width: 400px;
+      width: 100vw;
+      align-self: center;
+      background: lightcoral;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
 }
 
 .title h1 {
@@ -23,17 +29,66 @@ header {
     margin:0;
 }
 
+nav {
+    position: absolute;
+    background: yellow;
+    top: 84px;
+    max-width: 400px;
+    width: 100vw;
+}
 
 nav ul {
     list-style-type: none;
-    
+    padding: 0;
+    width: 100%;
+    z-index: 4;
+    margin:0;
 }
 
 nav ul a {
     text-decoration: none;
 }
 
+nav li {
+    font-size: 2rem;
+    text-align: center;
+}
+  
+nav li:hover {
+    background: gold;
+}
+
 .logo {
 width: 64px;
 margin: .5rem;
+}
+
+#hamburger {
+  font-size: 3rem;
+  padding: .4rem;
+  margin: .5rem;
+  border: solid black 1px;
+  background: lightgray;
+  height: 40px;
+}
+
+.closed {
+  opacity: 0;
+  z-index: 0;
+  transition: all 0.7s;
+  transform: translateX(-10rem);
+}
+
+.open {
+  display: block;
+  transition: all 0.7s;
+  transform: translateY(0rem);
+  opacity: 1;
+  z-index: 1000;
+}
+
+#murray {
+  z-index: 2;
+  max-width: 400px;
+    width: 100vw;
 }
