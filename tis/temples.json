@@ -1,0 +1,111 @@
+{
+    "temple": [
+        {
+            "name": "Atlanta Georgia Temple",
+            "address": "6450 Barfield Rd NE",
+            "city": "Sandy Springs",
+            "state": "GA",
+            "zip": 30328,
+            "telephone": "770-393-3698",
+            "services": [
+                "No clothing rental available",
+                "No cafeteria available",
+                "Patron housing available",
+                "Distribution center nearby"
+            ],
+            "history": [
+                "2 April 1980 - Announced",
+                "7 March 1981 - Groundbreaking",
+                "1 June 1983 - Dedicated",
+                "14 November 1997 - Rededicated",
+                "1 May 2011 - Rededicated"
+            ],
+            "image": "https://assets.ldscdn.org/43/a3/43a3c0d543c916a041747a40474b563c15be4b5b/atlanta_temple_lds.jpeg",
+            "closure_schedule": "Monday, 26 September 2022 - Monday, 10 October 2022"
+        },
+        {
+            "name": "Orlando Florida Temple",
+            "address": "9000 Windy Ridge Rd",
+            "city": "Windermere",
+            "state": "FL",
+            "zip": 34786,
+            "telephone": "407-876-0022",
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "history": [
+                "6 April 1991 - Announced",
+                "20 June 1992 - Groundbreaking",
+                "9 October 1994 - Dedicated"
+            ],
+            "image": "https://assets.ldscdn.org/3c/de/3cde4127c02de4e60e0c6f5f51c4583ee78f2c7f/orlando_temple_lds.jpeg",
+            "closure_schedule": [
+                "Sunday, 28 August 2022 - Monday, 19 September 2022",
+                "Saturday, 1 October 2022",
+                "Wednesday, 23 November 2022 - Thursday, 24 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022",
+                "Saturday, 7 October 2023",
+                "Wednesday, 22 November 2023 (Limited Operations)",
+                "Thursday, 23 November 2023",
+                "Saturday, 23 December 2023 - Monday, 25 December 2023"
+            ]
+        },
+        {
+            "name": "Washington D.C. Temple",
+            "address": "9900 Stoneybrook Dr",
+            "city": "Kensington",
+            "state": "MD",
+            "zip": 20895,
+            "telephone": "301-588-0650",
+            "services": [
+                "Temple closed during renovation"
+            ],
+            "history": [
+                "15 November 1968 - Announced",
+                "7 December 1968 - Groundbreaking",
+                "19 November 1974 - Dedicated",
+                "14 August 2022 - Rededicated"
+            ],
+            "image": "https://assets.ldscdn.org/0c/1a/0c1aaf32c732f70c62dc6f7e1f7e4d7282a595ad/washington_dc_mormon_temple.jpeg",
+            "closure_schedule": "The temple will be dedicated on August 14, 2022, and open for patrons on August 30, 2022."
+        },
+        {
+            "name": "Manhattan New York Temple",
+            "address": "125 Columbus Ave, Fourth Floor",
+            "city": "New York",
+            "state": "NY",
+            "zip": 10023,
+            "telephone": "917-441-8220",
+            "services": [
+                "Clothing rental available",
+                "No cafeteria available",
+                "No patron housing available",
+                "Distribution center nearby"
+            ],
+            "history": [
+                "15 November 1968 - Announced",
+                "7 December 1968 - Groundbreaking",
+                "19 November 1974 - Dedicated",
+                "14 August 2022 - Rededicated"
+            ],
+            "image": "https://assets.ldscdn.org/06/0c/060cc51bb1e228d7034fbf6c3e0719e0fbf79117/manhattan_temple_lds.jpeg",
+            "closure_schedule": [
+                "Monday, 25 July 2022 - Monday, 8 August 2022",
+                "Saturday, 1 October 2022 - Sunday, 2 October 2022",
+                "Thursday, 24 November 2022 - Friday, 25 November 2022",
+                "Saturday, 24 December 2022",
+                "Saturday, 31 December 2022",
+                "Monday, 23 January 2023 - Monday, 6 February 2023",
+                "Saturday, 1 April 2023 - Sunday, 2 April 2023",
+                "Tuesday, 4 July 2023",
+                "Monday, 24 July 2023 - Monday, 7 August 2023",
+                "Saturday, 30 September 2023 - Sunday, 1 October 2023",
+                "Thursday, 23 November 2023 - Friday, 24 November 2023"
+            ]
+        }
+    ]
+}

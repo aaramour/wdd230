@@ -41,7 +41,6 @@ nav ul {
     list-style-type: none;
     padding: 0;
     width: 100%;
-    z-index: 4;
     margin:0;
 }
 
@@ -92,6 +91,7 @@ margin: .5rem;
   z-index: 2;
   max-width: 400px;
     width: 100vw;
+    position: relative;
 }
 
 footer p {

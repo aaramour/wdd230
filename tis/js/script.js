@@ -10,6 +10,9 @@ hamburger_btn.addEventListener(
   false
 );
 
+window.onresize = () => {if (window.innerWidth > 800) {nav.removeAttribute("class")}else{nav.setAttribute("class", "closed")}};
+
+
 function toggleMenu(item, button) {
   console.log("The Menu Toggle Worked!");
   console.log(item.classList);

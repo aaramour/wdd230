@@ -1,0 +1,41 @@
+@media (min-width: 50em) {
+
+main, header, footer {
+    max-width: 1200px;
+    justify-content: center;
+}
+
+main {
+    background: white;
+}
+
+#hamburger {
+    display: none;
+}
+
+.title {
+    /* display: flex; */
+    justify-content: center;
+    align-items: center;
+    /* gap: 1rem; */
+}
+
+nav {
+    position: relative;
+    z-index: auto;
+    max-width: 1200px;
+    width: auto;
+    flex-direction: row;
+    top: 0;
+    background: lightcoral;
+}
+
+nav li {
+    display: inline;
+    margin: 1rem;
+    font-size: 2rem;
+}
+
+
+
+}
