@@ -1,26 +1,24 @@
 @media (min-width: 50em) {
-
-main, header, footer {
+  main,
+  header,
+  footer {
     max-width: 1200px;
-    justify-content: center;
-}
+  }
 
-main {
+  main {
     background: white;
-}
+  }
 
-#hamburger {
+  #hamburger {
     display: none;
-}
+  }
 
-.title {
-    /* display: flex; */
+  .title {
     justify-content: center;
     align-items: center;
-    /* gap: 1rem; */
-}
+  }
 
-nav {
+  nav {
     position: relative;
     z-index: auto;
     max-width: 1200px;
@@ -28,14 +26,28 @@ nav {
     flex-direction: row;
     top: 0;
     background: lightcoral;
-}
+  }
 
-nav li {
-    display: inline;
-    margin: 1rem;
-    font-size: 2rem;
-}
+  .mainNav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    overflow: visible;
+  }
 
+  nav li {
+    padding: 1rem;
+    font-size: 1.8rem;
+  }
 
+  nav.closed {
+    display: block;
+    transition: all 0s;
+    transform: translateX(0rem);
+    opacity: 1;
+  }
 
+  header .social {
+    order: 4;
+  }
 }

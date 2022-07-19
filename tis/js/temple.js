@@ -1,3 +1,5 @@
+
+
 let url = "..//temples.json"
 const cards = document.querySelector('.cards');
 // async function getTemples() {
@@ -37,7 +39,7 @@ function displayTemples(data) {
     // let scheduleList = document.createElement('p');
     
   //   Let's go ahead and fill the contents of those elements
-    card.innerHTML = `<div class="likeIcon"><img src="images/like.png" alt="like" /></div>`;
+    card.innerHTML = `<div class="likeIcon"><img src="images/like.png" alt="like ${data.name}" /></div>`;
     h2.textContent = `${data.name}`;
     picture.setAttribute('src', data.image);
     picture.setAttribute('alt', altText);
@@ -67,4 +69,22 @@ function displayTemples(data) {
     document.querySelector('div.cards').appendChild(card);
 
 }
+// let liked = window.localStorage.getItem("liked-ls")
 
+// const likeBtn = document.querySelectorAll(".likeIcon");
+
+
+// This doesn't work:
+
+document.getElementsByClassName("likeIcon").forEach(element =>
+  element.addEventListener("click", () => {
+    // element.classList.add("liked");
+    // element.removeAttribute("src");
+    // element.setAttribute("src", "images/liked.png")
+    console.log(element);
+    console.log("HI");
+    element.innerHTML=`<img src="images/liked.png" alt="liked temple" />`;
+    alert();
+  }
+    ))
+  

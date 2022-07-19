@@ -1,17 +1,45 @@
 @media (min-width: 39em) {
-
-main, header, footer, nav {
+  main,
+  header,
+  footer,
+  nav {
     max-width: 800px;
     width: 100%;
-}
+  }
 
-nav li{
+  nav li {
     padding: 1rem;
     font-size: 3rem;
-}
+  }
 
-main {
+  main {
     justify-content: center;
-}
+    text-align: center;
+  }
 
+  .mainNav {
+    flex-direction: column;
+  }
+
+  header .social {
+    display: flex;
+  }
+
+  .social {
+    border-top: none;
+    padding: 0;
+  }
+
+  .social img {
+    width: 40px;
+  }
+
+  footer {
+    flex-direction: row;
+    padding: 0;
+    margin: 0 auto;
+  }
+  footer p {
+    padding-right: 1rem;
+  }
 }
