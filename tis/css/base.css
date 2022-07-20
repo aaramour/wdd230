@@ -325,3 +325,19 @@ label {
   padding-top: 0.5rem;
   display: block;
 }
+
+.hero img {
+  width: 100%;
+  max-width: 400px;
+}
+
+#receptionInfo section {
+  text-align: center;
+}
+
+#receptionInfo p {
+  border-bottom: 2px solid black;
+  width: 70%;
+  margin: 0 auto;
+  margin-bottom: 1rem;
+}

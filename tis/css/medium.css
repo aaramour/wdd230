@@ -82,4 +82,20 @@
     border-left: solid black 1px;
     padding-left: 1rem;
   }
+
+  .hero {
+    grid-column: 1/4;
+    width: 100%;
+  }
+
+  .twoColumn {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    align-items: flex-start;
+    gap: 2rem;
+  }
+
+  .hero img {
+    width: 100%;
+  }
 }

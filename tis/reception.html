@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+SC&family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/medium.css" />
+    <link rel="stylesheet" href="css/large.css" />
+    <script defer src="js/script.js"></script>
+    <meta
+      name="description"
+      content="Reception scheduling at Temple Inn & Suites - Luxury room and board for temple missionaries, individuals, and families visiting Latter-Day Saint Temples."
+    />
+    <title>Reception - Temple Inn & Suites</title>
+  </head>
+  <body>
+    <header>
+      <div class="social">
+        <a href="https://www.facebook.com"
+          ><img class="hover" src="images/fb_icon.png" alt="Facebook"
+        /></a>
+        <a href="https://www.instagram.com"
+          ><img class="hover" src="images/ig_icon.png" alt="Instagram"
+        /></a>
+      </div>
+
+      <div class="titleLogo">
+        <picture
+          ><a href="index.html"
+            ><img class="logo" src="images/logo3_128.png" alt="logo" /></a
+        ></picture>
+        <div class="title">
+          <h1>Temple</h1>
+          <h2>Inn & Suites</h2>
+        </div>
+      </div>
+      <nav class="closed">
+        <ul class="mainNav">
+          <li><a href="index.html.html">Home</a></li>
+          <li><a href="reservation.html">Reservations</a></li>
+          <li><a href="temple.html">Temples</a></li>
+          <li><a href="services.html">Services</a></li>
+        </ul>
+      </nav>
+
+      <img id="hamburger" src="images/burger_btn.png" alt="burger button" />
+    </header>
+
+    <main class="twoColumn">
+      <div class="hero">
+        <img src="images/reception.jpg" alt="Wedding Reception" />
+      </div>
+      <div class="shortForm">
+        <form method="get" action="thankyou.html">
+          <h2>Reception at Temple Inn & Suites</h2>
+          <label for="location">Location*</label>
+          <select name="location" id="location" required>
+            <option value="" selected disabled hidden>
+              Please make a selection*
+            </option>
+          </select>
+
+          <label for="name">Name*</label>
+          <input type="text" name="name" placeholder="Name*" required />
+
+          <label for="email">Email*</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address*"
+            required
+          />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" placeholder="Phone Number" />
+
+          <label for="comments">Questions About Receptions</label>
+          <textarea
+            class="longtext"
+            name="comments"
+            cols="6"
+            rows="20"
+            placeholder="Questions..."
+          ></textarea>
+
+          <input
+            type="submit"
+            value="Request Information"
+            class="submitBtn button"
+          />
+        </form>
+      </div>
+      <div id="receptionInfo">
+        <section>
+          <img
+            class="serviceImg"
+            src="images/reception1.jpg"
+            alt="reception tables"
+          />
+          <h3>Reception Hall</h3>
+          <p>
+            The Reception Hall at Temple Inn and Suites can seat (and feed) up
+            to 246 guests
+          </p>
+        </section>
+        <section>
+          <img
+            class="serviceImg"
+            src="images/reception2.jpg"
+            alt="reception catering"
+          />
+          <h3>Catering</h3>
+          <p>We offer full catering services</p>
+        </section>
+        <section>
+          <img
+            class="serviceImg"
+            src="images/reception3.jpg"
+            alt="reception cake"
+          />
+          <h3>The Cake</h3>
+          <p>We work with you to create the cake of your dreams</p>
+        </section>
+      </div>
+    </main>
+
+    <footer>
+      <section>
+        <picture
+          ><a href="index.html"
+            ><img class="logo" src="images/logo_name.png" alt="logo" /></a
+        ></picture>
+        <div class="social">
+          <a href="https://goo.gl/maps/EVqcTmPsfsVPapN2A"
+            ><img class="hover" src="images/map_icon.png" alt="Google Map link"
+          /></a>
+          <a href="https://www.facebook.com"
+            ><img class="hover" src="images/fb_icon.png" alt="Facebook"
+          /></a>
+          <a href="https://www.instagram.com"
+            ><img class="hover" src="images/ig_icon.png" alt="Instagram"
+          /></a>
+        </div>
+        <div class="contactInfo">
+          <p>4800 Montgomery Ln #300</p>
+          <p>Bethesda, MD 20814</p>
+        </div>
+      </section>
+      <section id="attribution"></section>
+    </footer>
+  </body>
+</html>
