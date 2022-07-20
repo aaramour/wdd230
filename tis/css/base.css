@@ -236,6 +236,7 @@ h3 {
 
 .serviceImg {
   width: 100%;
+  max-width: 350px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
