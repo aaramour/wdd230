@@ -1,5 +1,3 @@
-
-
 let url = "https://aaramour.github.io/wdd230/tis/temples.json"
 const cards = document.querySelector('.cards');
 // async function getTemples() {
