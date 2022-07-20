@@ -1,3 +1,4 @@
+const today = new Date();
 const hamburger_btn = document.querySelector("#hamburger");
 
 const nav = document.querySelector("nav");
@@ -33,3 +34,5 @@ function toggleMenu(item, button) {
     );
   }
 }
+
+document.querySelector("#attribution").innerHTML = `<p>Aaron Eardley | WDD230 | BYU-Idaho</p><p>Last modified ${today.toLocaleString()}</p>`

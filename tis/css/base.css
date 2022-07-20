@@ -24,13 +24,15 @@ footer {
 }
 
 header,
-footer {
+footer section {
   display: flex;
   justify-content: space-between;
 }
 
-footer {
+footer section {
   flex-direction: column;
+  width: fit-content;
+  margin: 0 auto;
 }
 
 .titleLogo {
@@ -236,7 +238,7 @@ h3 {
 
 .serviceImg {
   width: 100%;
-  max-width: 350px;
+  max-width: 375px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -316,3 +318,10 @@ label {
 }
 
 /* FORMS END */
+
+#attribution {
+  border-top: black 2px solid;
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  display: block;
+}

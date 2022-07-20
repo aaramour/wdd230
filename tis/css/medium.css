@@ -34,10 +34,11 @@
     width: 40px;
   }
 
-  footer {
+  footer section {
     flex-direction: row;
     padding: 0;
     margin: 0 auto;
+    align-items: center;
   }
   footer p {
     padding-right: 1rem;
@@ -71,5 +72,14 @@
 
   .button {
     width: 85%;
+  }
+
+  #attribution p {
+    display: inline;
+  }
+
+  #attribution :nth-child(2) {
+    border-left: solid black 1px;
+    padding-left: 1rem;
   }
 }
