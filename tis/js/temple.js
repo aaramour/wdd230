@@ -1,6 +1,6 @@
 
 
-let url = "http://aaramour.github.io/wdd230/tis/temples.json"
+let url = "https://aaramour.github.io/wdd230/tis/temples.json"
 const cards = document.querySelector('.cards');
 // async function getTemples() {
 //     let response = await fetch(url);
