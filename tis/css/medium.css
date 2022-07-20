@@ -42,4 +42,34 @@
   footer p {
     padding-right: 1rem;
   }
+
+  #serviceDiv section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    border: solid black 1px;
+    padding: 1rem;
+    border-radius: 12px;
+    gap: 1rem;
+    max-width: 90%;
+  }
+
+  #serviceDiv :nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .serviceImg {
+    max-width: 400px;
+    border-radius: 12px;
+    border: 1px black solid;
+    box-shadow: 1px 1px 12px rgba(0, 0, 0, 0.6);
+  }
+
+  .button {
+    width: 85%;
+  }
 }

@@ -41,13 +41,18 @@
   }
 
   nav.closed {
-    display: block;
+    display: flex;
     transition: all 0s;
     transform: translateX(0rem);
     opacity: 1;
+    z-index: auto;
   }
 
   header .social {
     order: 4;
+  }
+
+  .serviceImg {
+    max-width: 600px;
   }
 }

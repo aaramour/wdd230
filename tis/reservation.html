@@ -58,44 +58,83 @@
     <main>
       <form method="get" action="thankyou.html">
         <h2>Reservation at Temple Inn & Suites</h2>
-        <label for="location">Choose a location:</label>
-        <select name="location" id="location">
-          <option value="blank">Please make a selection:</option>
+        <label for="location">Location:</label>
+        <select name="location" id="location" required>
+          <option value="" selected disabled hidden>
+            Please make a selection:
+          </option>
         </select>
 
         <label for="start">Start date:</label>
+        <input type="date" id="date" name="date" max="2024-12-31" required />
 
-        <input type="date" id="date" name="date" max="2024-12-31" />
+        <!-- <label for="roomtype">Room Type:</label>
+        <select name="roomtype" id="roomtype">
+          <option value="blank">Please make a selection:</option>
+          <option value="twins">Three twin-size beds</option>
+          <option value="queen">Two queen-size beds</option>
+          <option value="king">One king-size bed</option>
+        </select> -->
+
+        <label for="roomtype">Room Type:</label>
+        <div class="radioWrapper">
+          <label htmlFor="roomtype">
+            <input type="radio" name="roomtype" value="twin" required />Three
+            twin-size beds</label
+          >
+          <label htmlFor="roomtype">
+            <input type="radio" name="roomtype" value="queen" />Two queen-size
+            beds</label
+          >
+          <label htmlFor="roomtype">
+            <input type="radio" name="roomtype" value="king" />One king-size
+            bed</label
+          >
+        </div>
+
+        <label for="numrooms">Number of Rooms:</label>
+        <select name="numrooms" id="numrooms" required>
+          <option value="" selected disabled hidden>
+            Please make a selection:
+          </option>
+          <option value="one">1</option>
+          <option value="two">2</option>
+          <option value="three">3</option>
+          <option value="four">4</option>
+          <option value="five">5</option>
+          <option value="sixPlus">6+</option>
+        </select>
 
         <label for="fname">First Name*</label>
-        <input type="text" name="fname" placeholder="First Name *" required />
+        <input type="text" name="fname" placeholder="First Name*" required />
 
         <label for="lname">Last Name*</label>
-        <input type="text" name="lname" placeholder="Last Name *" required />
+        <input type="text" name="lname" placeholder="Last Name*" required />
 
         <label for="email">Email*</label>
         <input type="email" name="email" placeholder="Email Address" required />
 
-        <label for="phone">Cell Phone</label>
-        <input
-          type="tel"
-          name="phone"
-          placeholder="Cell Phone Number"
-          required
-        />
-        <label class="top">Business Name*</label>
-        <input type="text" name="bname" placeholder="Business Name" required />
+        <label for="phone">Phone Number*</label>
+        <input type="tel" name="phone" placeholder="Phone Number*" required />
 
-        <label for="comments">Business Description</label>
+        <label class="top">Home State (Country if outside U.S.)</label>
+        <input
+          type="text"
+          name="bname"
+          placeholder="Home State or Country"
+          pattern="[a-zA-Z]*"
+        />
+
+        <label for="comments">Special Accomodations or Comments</label>
         <textarea
           class="longtext"
           name="comments"
           cols="6"
           rows="20"
-          placeholder="Comments or Questions..."
+          placeholder="Special accomodations or questions..."
         ></textarea>
 
-        <input type="submit" value="Make Reservation" class="submitBtn" />
+        <input type="submit" value="Make Reservation" class="submitBtn hover" />
       </form>
     </main>
 
