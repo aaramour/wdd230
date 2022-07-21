@@ -7,9 +7,9 @@
     width: 100%;
   }
 
-  nav li {
-    padding: 1rem;
+  nav li a {
     font-size: 3rem;
+    padding: 1rem;
   }
 
   main {

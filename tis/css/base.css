@@ -10,6 +10,7 @@ span {
 a {
   text-decoration: none;
   color: black;
+  display: block;
 }
 
 body {
@@ -93,6 +94,7 @@ nav li {
   font-size: 2rem;
   text-align: center;
   transition: all 0.3s ease;
+  padding: 0;
 }
 
 nav li a {
@@ -293,7 +295,7 @@ form {
   max-width: 400px;
   margin: 0 auto;
   padding: 1rem;
-  background: rosybrown;
+  background: ivory;
 }
 
 input,
