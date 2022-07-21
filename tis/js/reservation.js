@@ -1,4 +1,5 @@
-let url = "..//temples.json";
+const todayIs = new Date();
+let url = "https://aaramour.github.io/wdd230/tis/temples.json";
 
 fetch(url)
 .then(function (response) {
@@ -20,9 +21,9 @@ function displayTempleNames(data) {
     dropdown.innerHTML += option;
 }
 
-const today = new Date();
-// today.toISOString.split('T')[0];
-console.log(today.toISOString);
 
-document.querySelector("#date").setAttribute("min", today.toISOString().split('T')[0]);
-document.querySelector("#date").setAttribute("value", today.toISOString().split('T')[0]);
+// today.toISOString.split('T')[0];
+console.log(todayIs.toISOString);
+
+document.querySelector("#date").setAttribute("min", todayIs.toISOString().split('T')[0]);
+document.querySelector("#date").setAttribute("value", todayIs.toISOString().split('T')[0]);

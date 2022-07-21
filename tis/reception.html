@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/script.js"></script>
+    <script defer src="js/reservation.js"></script>
     <meta
       name="description"
       content="Reception scheduling at Temple Inn & Suites - Luxury room and board for temple missionaries, individuals, and families visiting Latter-Day Saint Temples."
@@ -41,12 +42,25 @@
           <h2>Inn & Suites</h2>
         </div>
       </div>
+
       <nav class="closed">
         <ul class="mainNav">
-          <li><a href="index.html.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="reservation.html">Reservations</a></li>
           <li><a href="temple.html">Temples</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li>
+            <a href="services.html">Services</a>
+            <ul class="dropdown">
+              <li>
+                <a href="missionary.html">Long-Term Suites</a>
+              </li>
+              <li><a href="reception.html">Receptions</a></li>
+            </ul>
+            <li class="subNav">
+              <a href="missionary.html">Long-Term Suites</a>
+            </li>
+            <li class="subNav"><a href="reception.html">Receptions</a></li>
+          </li>
         </ul>
       </nav>
 
@@ -55,11 +69,12 @@
 
     <main class="twoColumn">
       <div class="hero">
+        <h2 class="pageTitle">Reception Hall</h2>
         <img src="images/reception.jpg" alt="Wedding Reception" />
       </div>
       <div class="shortForm">
         <form method="get" action="thankyou.html">
-          <h2>Reception at Temple Inn & Suites</h2>
+          <h2>Reception Information Request</h2>
           <label for="location">Location*</label>
           <select name="location" id="location" required>
             <option value="" selected disabled hidden>
@@ -106,8 +121,8 @@
           />
           <h3>Reception Hall</h3>
           <p>
-            The Reception Hall at Temple Inn and Suites can seat (and feed) up
-            to 246 guests
+            The Reception Hall at Temple Inn and Suites can host up to 246
+            guests for your wedding or event
           </p>
         </section>
         <section>
@@ -117,7 +132,10 @@
             alt="reception catering"
           />
           <h3>Catering</h3>
-          <p>We offer full catering services</p>
+          <p>
+            We offer full catering services featuring several five-star menu
+            selections
+          </p>
         </section>
         <section>
           <img

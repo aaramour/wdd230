@@ -14,6 +14,7 @@
     <link rel="stylesheet" href="css/medium.css" />
     <link rel="stylesheet" href="css/large.css" />
     <script defer src="js/script.js"></script>
+    <script defer src="js/reservation.js"></script>
     <meta
       name="description"
       content="Suites for full-time Temple Missionaries at Temple Inn & Suites - Luxury room and board for temple missionaries, individuals, and families visiting Latter-Day Saint Temples."
@@ -41,12 +42,25 @@
           <h2>Inn & Suites</h2>
         </div>
       </div>
+
       <nav class="closed">
         <ul class="mainNav">
-          <li><a href="index.html.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="reservation.html">Reservations</a></li>
           <li><a href="temple.html">Temples</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li>
+            <a href="services.html">Services</a>
+            <ul class="dropdown">
+              <li>
+                <a href="missionary.html">Long-Term Suites</a>
+              </li>
+              <li><a href="reception.html">Receptions</a></li>
+            </ul>
+            <li class="subNav">
+              <a href="missionary.html">Long-Term Suites</a>
+            </li>
+            <li class="subNav"><a href="reception.html">Receptions</a></li>
+          </li>
         </ul>
       </nav>
 
@@ -54,12 +68,107 @@
     </header>
 
     <main>
-      <div>
-        <img
-          id="murray"
-          src="http://www.fillmurray.com/400/300"
-          alt="Bill Murray"
-        />
+      <h2 class="pageTitle span">Long-Term Suites</h2>
+
+      <div id="serviceDiv">
+        <section>
+          <div>
+            <h2>Long-Term Kitchenette Suite</h2>
+            <p>
+              A luxurious suite for long term stay for patrons such as full-time
+              Temple Missionaries. Enjoy a living space that makes you feel at
+              home.
+            </p>
+          </div>
+          <img
+            class="serviceImg"
+            src="images/suite1.jpg"
+            alt="The Suite Life"
+          />
+        </section>
+
+        <section>
+          <div>
+            <h2>The Kitchenette</h2>
+            <p>
+              Each of our suites features a kitchenette with everything needed
+              to prepare healthy, home-cooked meals.
+            </p>
+          </div>
+          <img class="serviceImg" src="images/suite2.jpg" alt="Kitchenette" />
+        </section>
+
+        <section>
+          <div>
+            <h2>Long-Term</h2>
+            <p>
+              Plan to stay as long as you need to. We offer competitive weekly
+              and monthly rates, with special offers for full-time Temple
+              Missionaries.
+            </p>
+          </div>
+          <img
+            class="serviceImg"
+            src="images/suite3.jpg"
+            alt="Weekly Planner"
+          />
+        </section>
+
+        <section>
+          <div>
+            <h2>Services and Care</h2>
+            <p>
+              Take advantage of laundry services, including dry-cleaning. Other
+              amenities include an indoor pool and exercise room.
+            </p>
+          </div>
+          <img
+            class="serviceImg"
+            src="images/suite4.jpg"
+            alt="Weekly Planner"
+          />
+        </section>
+      </div>
+
+      <div class="shortForm">
+        <form method="get" action="thankyou.html">
+          <h2>Long-Term Suite Inquiry</h2>
+          <label for="location">Location*</label>
+          <select name="location" id="location" required>
+            <option value="" selected disabled hidden>
+              Please make a selection*
+            </option>
+          </select>
+
+          <label for="name">Name*</label>
+          <input type="text" name="name" placeholder="Name*" required />
+
+          <label for="email">Email*</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address*"
+            required
+          />
+
+          <label for="phone">Phone Number</label>
+          <input type="tel" name="phone" placeholder="Phone Number" />
+
+          <label for="comments">Questions About Long-Term Suites</label>
+          <textarea
+            class="longtext"
+            name="comments"
+            cols="6"
+            rows="20"
+            placeholder="Questions..."
+          ></textarea>
+
+          <input
+            type="submit"
+            value="Request Information"
+            class="submitBtn button"
+          />
+        </form>
       </div>
     </main>
 

@@ -29,14 +29,11 @@ function displayTemples(data) {
     let h2 = document.createElement('h2');
     let pStreet = document.createElement('p');
     let pStreet2 = document.createElement('p');
-    // let img = document.createElement('img');
     let picture = document.createElement('img');
     let addressDiv = document.createElement('div');
     let altText = `${data.name}}`
     let scheduleDiv = document.createElement('div');
-    // let scheduleList = document.createElement('p');
     
-  //   Let's go ahead and fill the contents of those elements
     card.innerHTML = `<div class="likeIcon"><img src="images/like.png" alt="like ${data.name}" /></div>`;
     h2.textContent = `${data.name}`;
     picture.setAttribute('src', data.image);
@@ -51,9 +48,7 @@ function displayTemples(data) {
     scheduleDiv.innerHTML = `<h3>Services:</h3>`;
     
     
-  //   Now we are adding them to the document
     card.appendChild(picture); 
-    // card.appendChild(img);
     card.appendChild(h2);
     card.appendChild(addressDiv);
     card.appendChild(scheduleDiv);

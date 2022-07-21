@@ -99,4 +99,18 @@
     width: 100%;
     max-width: 100%;
   }
+
+  .pageTitle {
+    font-size: 2.5rem;
+    width: 60%;
+  }
+
+  form {
+    border: 1px black solid;
+    border-radius: 12px;
+  }
+
+  .span {
+    grid-column: 1/3;
+  }
 }

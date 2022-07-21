@@ -43,12 +43,25 @@
           <h2>Inn & Suites</h2>
         </div>
       </div>
+
       <nav class="closed">
         <ul class="mainNav">
-          <li><a href="index.html.html">Home</a></li>
+          <li><a href="index.html">Home</a></li>
           <li><a href="reservation.html">Reservations</a></li>
           <li><a href="temple.html">Temples</a></li>
-          <li><a href="services.html">Services</a></li>
+          <li>
+            <a href="services.html">Services</a>
+            <ul class="dropdown">
+              <li>
+                <a href="missionary.html">Long-Term Suites</a>
+              </li>
+              <li><a href="reception.html">Receptions</a></li>
+            </ul>
+            <li class="subNav">
+              <a href="missionary.html">Long-Term Suites</a>
+            </li>
+            <li class="subNav"><a href="reception.html">Receptions</a></li>
+          </li>
         </ul>
       </nav>
 
@@ -56,78 +69,90 @@
     </header>
 
     <main>
-      <form method="get" action="thankyou.html">
-        <h2>Reservation at Temple Inn & Suites</h2>
-        <label for="location">Location:</label>
-        <select name="location" id="location" required>
-          <option value="" selected disabled hidden>
-            Please make a selection:
-          </option>
-        </select>
+      <div>
+        <h2 class="pageTitle">Reservations</h2>
+        <form method="get" action="thankyou.html">
+          <h2>Reservation at Temple Inn & Suites</h2>
+          <label for="location">Location:</label>
+          <select name="location" id="location" required>
+            <option value="" selected disabled hidden>
+              Please make a selection:
+            </option>
+          </select>
 
-        <label for="start">Start date:</label>
-        <input type="date" id="date" name="date" max="2024-12-31" required />
+          <label for="start">Start date:</label>
+          <input type="date" id="date" name="date" max="2024-12-31" required />
 
-        <label for="roomtype">Room Type:</label>
-        <div class="radioWrapper">
-          <label htmlFor="roomtype">
-            <input type="radio" name="roomtype" value="twin" required />Three
-            twin-size beds</label
-          >
-          <label htmlFor="roomtype">
-            <input type="radio" name="roomtype" value="queen" />Two queen-size
-            beds</label
-          >
-          <label htmlFor="roomtype">
-            <input type="radio" name="roomtype" value="king" />One king-size
-            bed</label
-          >
-        </div>
+          <label for="roomtype">Room Type:</label>
+          <div class="radioWrapper">
+            <label htmlFor="roomtype">
+              <input type="radio" name="roomtype" value="twin" required />Three
+              twin-size beds</label
+            >
+            <label htmlFor="roomtype">
+              <input type="radio" name="roomtype" value="queen" />Two queen-size
+              beds</label
+            >
+            <label htmlFor="roomtype">
+              <input type="radio" name="roomtype" value="king" />One king-size
+              bed</label
+            >
+          </div>
 
-        <label for="numrooms">Number of Rooms:</label>
-        <select name="numrooms" id="numrooms" required>
-          <option value="" selected disabled hidden>
-            Please make a selection:
-          </option>
-          <option value="one">1</option>
-          <option value="two">2</option>
-          <option value="three">3</option>
-          <option value="four">4</option>
-          <option value="five">5</option>
-          <option value="sixPlus">6+</option>
-        </select>
+          <label for="numrooms">Number of Rooms:</label>
+          <select name="numrooms" id="numrooms" required>
+            <option value="" selected disabled hidden>
+              Please make a selection:
+            </option>
+            <option value="one">1</option>
+            <option value="two">2</option>
+            <option value="three">3</option>
+            <option value="four">4</option>
+            <option value="five">5</option>
+            <option value="sixPlus">6+</option>
+          </select>
 
-        <label for="fname">First Name*</label>
-        <input type="text" name="fname" placeholder="First Name*" required />
+          <label for="fname">First Name*</label>
+          <input type="text" name="fname" placeholder="First Name*" required />
 
-        <label for="lname">Last Name*</label>
-        <input type="text" name="lname" placeholder="Last Name*" required />
+          <label for="lname">Last Name*</label>
+          <input type="text" name="lname" placeholder="Last Name*" required />
 
-        <label for="email">Email*</label>
-        <input type="email" name="email" placeholder="Email Address" required />
+          <label for="email">Email*</label>
+          <input
+            type="email"
+            name="email"
+            placeholder="Email Address"
+            required
+          />
 
-        <label for="phone">Phone Number*</label>
-        <input type="tel" name="phone" placeholder="Phone Number*" required />
+          <label for="phone">Phone Number*</label>
+          <input type="tel" name="phone" placeholder="Phone Number*" required />
 
-        <label class="top">Home State (Country if outside U.S.)</label>
-        <input
-          type="text"
-          name="bname"
-          placeholder="Home State or Country"
-          pattern="[a-zA-Z]*"
-        />
+          <label class="top">Home State (Country if outside U.S.)</label>
+          <input
+            type="text"
+            name="bname"
+            placeholder="Home State or Country"
+            pattern="[a-zA-Z]*"
+          />
 
-        <label for="comments">Special Accomodations or Comments</label>
-        <textarea
-          class="longtext"
-          name="comments"
-          cols="6"
-          rows="20"
-          placeholder="Special accomodations or questions..."
-        ></textarea>
+          <label for="comments">Special Accomodations or Comments</label>
+          <textarea
+            class="longtext"
+            name="comments"
+            cols="6"
+            rows="20"
+            placeholder="Special accomodations or questions..."
+          ></textarea>
 
-        <input type="submit" value="Make Reservation" class="submitBtn hover" />
-      </form>
+          <input
+            type="submit"
+            value="Make Reservation"
+            class="submitBtn hover"
+          />
+        </form>
+      </div>
     </main>
 
     <footer>

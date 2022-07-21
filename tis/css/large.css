@@ -20,7 +20,6 @@
 
   nav {
     position: relative;
-    z-index: auto;
     max-width: 1200px;
     width: auto;
     flex-direction: row;
@@ -33,6 +32,7 @@
     flex-direction: row;
     flex-wrap: nowrap;
     overflow: visible;
+    flex: 1;
   }
 
   nav li {
@@ -54,5 +54,35 @@
 
   .serviceImg {
     max-width: 600px;
+  }
+
+  #serviceDiv section:last-of-type {
+    margin-bottom: 1.5rem;
+  }
+
+  .dropdown {
+    display: block;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: 64px;
+    background: lightcoral;
+    transition: all 0.3s ease;
+    left: 0;
+    width: 16rem;
+  }
+
+  .subNav {
+    display: none;
+  }
+
+  .mainNav li {
+    position: relative;
+  }
+
+  .mainNav li:hover > .dropdown,
+  .dropdown:hover {
+    visibility: visible;
+    opacity: 1;
   }
 }
