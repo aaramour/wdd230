@@ -115,6 +115,11 @@ nav li:hover {
   padding-top: 1rem;
 }
 
+footer .social {
+  display: flex;
+  flex-direction: row;
+}
+
 .dropdown {
   display: none;
 }
