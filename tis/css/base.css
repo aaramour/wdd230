@@ -23,6 +23,13 @@ footer {
   align-items: center;
 }
 
+main {
+  text-align: center;
+}
+footer {
+  padding-top: 1rem;
+}
+
 header,
 footer section {
   display: flex;
@@ -77,6 +84,7 @@ nav ul {
 nav li {
   font-size: 2rem;
   text-align: center;
+  transition: all 0.3s ease;
 }
 
 nav li:hover {
@@ -91,6 +99,10 @@ nav li:hover {
 .social {
   border-top: 2px solid black;
   padding-top: 1rem;
+}
+
+.dropdown {
+  display: none;
 }
 
 header .social {
@@ -171,6 +183,7 @@ section.card {
   margin: 1rem;
   border: solid 1px black;
   position: relative;
+  z-index: 0;
   box-shadow: -10px 10px 20px slategray;
   justify-content: space-between;
   transition: 0.3s all;
@@ -221,6 +234,10 @@ h3 {
 }
 
 /* SERVICES BEGIN */
+#serviceDiv {
+  text-align: center;
+}
+
 #serviceDiv section {
   display: flex;
   flex-direction: column-reverse;
@@ -230,6 +247,10 @@ h3 {
   border-radius: 12px;
   align-items: center;
   text-align: center;
+}
+
+#serviceDiv section:last-of-type {
+  margin-bottom: 0;
 }
 
 #serviceDiv p {
@@ -317,6 +338,10 @@ label {
   border: 2px black solid;
 }
 
+.shortForm {
+  margin-bottom: 1.5rem;
+}
+
 /* FORMS END */
 
 #attribution {
@@ -340,5 +365,14 @@ label {
   width: 70%;
   margin: 0 auto;
   padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.pageTitle {
+  font-size: 2rem;
+  padding: 1rem 0 0.5rem 0;
+  border-bottom: 2px black solid;
+  width: 90%;
+  margin: 0 auto;
   margin-bottom: 1rem;
 }
