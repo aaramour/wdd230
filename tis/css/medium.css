@@ -91,6 +91,11 @@
     display: inline;
   }
 
+  #attribution a {
+    margin-right: 1rem;
+  }
+
+  #attribution :nth-child(3),
   #attribution :nth-child(2) {
     border-left: solid black 1px;
     padding-left: 1rem;

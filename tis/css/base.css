@@ -1,6 +1,10 @@
 * {
   font-family: "Cormorant SC", serif;
-  /* font-family: 'Montserrat', sans-serif; */
+}
+
+p,
+span {
+  font-family: "Montserrat", sans-serif;
 }
 
 a {
@@ -19,8 +23,12 @@ footer {
   max-width: 400px;
   width: 100vw;
   align-self: center;
-  background: lightcoral;
   align-items: center;
+}
+
+header,
+footer {
+  background: lightcoral;
 }
 
 main {
@@ -85,6 +93,10 @@ nav li {
   font-size: 2rem;
   text-align: center;
   transition: all 0.3s ease;
+}
+
+nav li a {
+  display: block;
 }
 
 nav li:hover {
@@ -348,6 +360,7 @@ label {
 }
 
 .hero img {
+  position: relative;
   width: 100%;
   max-width: 400px;
 }
