@@ -74,6 +74,19 @@
     width: 85%;
   }
 
+  .button:hover {
+    opacity: 0.8;
+    transform: scale(1.05);
+  }
+
+  .hover:hover {
+    transform: scale(1.1);
+  }
+
+  .cta {
+    width: 50%;
+  }
+
   #attribution p {
     display: inline;
   }
