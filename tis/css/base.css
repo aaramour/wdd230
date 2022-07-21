@@ -259,10 +259,6 @@ h3 {
   text-align: center;
 }
 
-#serviceDiv section:last-of-type {
-  margin-bottom: 0;
-}
-
 #serviceDiv p {
   font-size: 1.2rem;
 }
@@ -393,6 +389,10 @@ label {
   width: 90%;
   margin: 0 auto;
   margin-bottom: 1rem;
+}
+
+#weatherCard {
+  margin-bottom: 1.5rem;
 }
 
 #weatherCard div {
